@@ -1,5 +1,0 @@
-D:\Prog\Gedcom.net\SiteMap\bin\Debug\SiteMap.dll
-D:\Prog\Gedcom.net\SiteMap\bin\Debug\SiteMap.pdb
-D:\Prog\Gedcom.net\SiteMap\obj\Debug\ResolveAssemblyReference.cache
-D:\Prog\Gedcom.net\SiteMap\obj\Debug\SiteMap.dll
-D:\Prog\Gedcom.net\SiteMap\obj\Debug\SiteMap.pdb

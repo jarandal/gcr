@@ -1,8 +1,0 @@
-D:\Prog\Gedcom.net\Gedcom\bin\Debug - VS\Gedcom.dll
-D:\Prog\Gedcom.net\Gedcom\bin\Debug - VS\Gedcom.pdb
-D:\Prog\Gedcom.net\Gedcom\bin\Debug - VS\Utility.dll
-D:\Prog\Gedcom.net\Gedcom\bin\Debug - VS\Utility.pdb
-D:\Prog\Gedcom.net\Gedcom\obj\Debug - VS\ResolveAssemblyReference.cache
-D:\Prog\Gedcom.net\Gedcom\obj\Debug - VS\Gedcom.dll
-D:\Prog\Gedcom.net\Gedcom\obj\Debug - VS\Gedcom.pdb
-D:\Prog\Gedcom.net\Gedcom\bin\Debug - VS\Mono.Posix.dll

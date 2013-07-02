@@ -1,5 +1,0 @@
-D:\Prog\Gedcom.net\Utility\bin\Debug - VS\Utility.dll
-D:\Prog\Gedcom.net\Utility\bin\Debug - VS\Utility.pdb
-D:\Prog\Gedcom.net\Utility\obj\Debug - VS\ResolveAssemblyReference.cache
-D:\Prog\Gedcom.net\Utility\obj\Debug - VS\Utility.dll
-D:\Prog\Gedcom.net\Utility\obj\Debug - VS\Utility.pdb

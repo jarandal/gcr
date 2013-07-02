@@ -1,7 +1,0 @@
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\bin\Web.config
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\bin\GedcomWebHandler.ashx
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\bin\global.asax
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\bin\Gedcom.UI.Web.dll
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\bin\Gedcom.UI.Web.pdb
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\obj\Debug - VS\Gedcom.UI.Web.dll
-D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Web\obj\Debug - VS\Gedcom.UI.Web.pdb

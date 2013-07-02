@@ -1,1 +1,0 @@
-<%@ WebHandler Language="C#" Class="Gedcom.UI.Web.GedcomWebHandler" %>

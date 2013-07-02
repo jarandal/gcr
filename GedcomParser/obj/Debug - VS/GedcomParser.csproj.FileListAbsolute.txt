@@ -1,9 +1,0 @@
-D:\Prog\Gedcom.net\GedcomParser\bin\Debug - VS\GedcomParser.dll
-D:\Prog\Gedcom.net\GedcomParser\bin\Debug - VS\GedcomParser.pdb
-D:\Prog\Gedcom.net\GedcomParser\bin\Debug - VS\Gedcom.dll
-D:\Prog\Gedcom.net\GedcomParser\bin\Debug - VS\Utility.dll
-D:\Prog\Gedcom.net\GedcomParser\bin\Debug - VS\Gedcom.pdb
-D:\Prog\Gedcom.net\GedcomParser\bin\Debug - VS\Utility.pdb
-D:\Prog\Gedcom.net\GedcomParser\obj\Debug - VS\ResolveAssemblyReference.cache
-D:\Prog\Gedcom.net\GedcomParser\obj\Debug - VS\GedcomParser.dll
-D:\Prog\Gedcom.net\GedcomParser\obj\Debug - VS\GedcomParser.pdb
