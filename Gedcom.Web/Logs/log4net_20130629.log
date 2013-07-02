@@ -1,0 +1,291 @@
+2013-06-29 16:45:00,667 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 16:45:00,680 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613044455.zip&GetBytes=true desde ::1
+2013-06-29 16:45:04,360 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613044455.zip&StartByte=0&Complete=True desde ::1
+2013-06-29 16:45:04,483 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_290613044455.zip desde ::1
+2013-06-29 16:45:06,469 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 16:45:06,707 [11] ERROR Gedcom.Web.Process System.Data.SqlClient.SqlException (0x80131904): The ALTER TABLE statement conflicted with the FOREIGN KEY constraint "FK_IndividualEvent". The conflict occurred in database "gcr_db", table "dbo.Individuals", column 'Id'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Gedcom.Model.GcrContext.RestoreServerDatabase(String filename, String processingFile) en D:\Prog\Gedcom.net\Gedcom.Model\GcrContext.vb:línea 223
+   en Gedcom.Web.Process.ProcessRequest(HttpContext context) en D:\Prog\Gedcom.net\Gedcom.Web\Process.ashx.vb:línea 47
+2013-06-29 16:45:08,484 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 16:48:04,722 [11] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 16:48:13,366 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 16:48:13,378 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613044811.zip&GetBytes=true desde ::1
+2013-06-29 16:48:13,986 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613044811.zip&StartByte=0&Complete=True desde ::1
+2013-06-29 16:48:14,089 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_290613044811.zip desde ::1
+2013-06-29 16:48:14,517 [10] ERROR Gedcom.Web.Process System.Data.SqlClient.SqlException (0x80131904): The ALTER TABLE statement conflicted with the FOREIGN KEY constraint "FK_IndividualEvent". The conflict occurred in database "gcr_db", table "dbo.Individuals", column 'Id'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Gedcom.Model.GcrContext.RestoreServerDatabase(String filename, String processingFile) en D:\Prog\Gedcom.net\Gedcom.Model\GcrContext.vb:línea 223
+   en Gedcom.Web.Process.ProcessRequest(HttpContext context) en D:\Prog\Gedcom.net\Gedcom.Web\Process.ashx.vb:línea 47
+2013-06-29 16:48:16,089 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 16:49:54,406 [10] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 16:50:08,489 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 16:50:08,501 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613045004.zip&GetBytes=true desde ::1
+2013-06-29 16:50:09,080 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613045004.zip&StartByte=0&Complete=True desde ::1
+2013-06-29 16:50:09,182 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_290613045004.zip desde ::1
+2013-06-29 16:50:09,925 [8] ERROR Gedcom.Web.Process System.Data.SqlClient.SqlException (0x80131904): The ALTER TABLE statement conflicted with the FOREIGN KEY constraint "FK_IndividualEvent". The conflict occurred in database "gcr_db", table "dbo.Individuals", column 'Id'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Gedcom.Model.GcrContext.RestoreServerDatabase(String filename, String processingFile) en D:\Prog\Gedcom.net\Gedcom.Model\GcrContext.vb:línea 223
+   en Gedcom.Web.Process.ProcessRequest(HttpContext context) en D:\Prog\Gedcom.net\Gedcom.Web\Process.ashx.vb:línea 47
+2013-06-29 16:50:11,183 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 16:50:28,969 [10] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 16:51:13,745 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 16:51:13,758 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613045112.zip&GetBytes=true desde ::1
+2013-06-29 16:51:14,410 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613045112.zip&StartByte=0&Complete=True desde ::1
+2013-06-29 16:51:14,515 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_290613045112.zip desde ::1
+2013-06-29 16:51:16,535 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 16:51:33,957 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Databound desde ::1
+2013-06-29 16:51:33,958 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Databound desde ::1
+2013-06-29 16:51:51,565 [12] INFO  Gedcom.Web.Process Página visitada: /gcr desde ::1
+2013-06-29 16:51:51,566 [12] INFO  Gedcom.Web.Process Página visitada: /gcr desde ::1
+2013-06-29 16:51:51,580 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:51:51,581 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:51:51,582 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:51:51,818 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/Site.css desde ::1
+2013-06-29 16:51:53,002 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:51:56,880 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:51:58,321 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 16:52:07,625 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 16:52:39,863 [12] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 16:52:41,255 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 16:52:43,037 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/test.htm desde ::1
+2013-06-29 16:52:43,154 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/stepcarousel.js desde ::1
+2013-06-29 16:52:43,180 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/colorbox.css desde ::1
+2013-06-29 16:52:43,189 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/jquery.colorbox.js desde ::1
+2013-06-29 16:52:43,189 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/img/opencircle.png desde ::1
+2013-06-29 16:52:43,289 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/img/leftnav.gif desde ::1
+2013-06-29 16:52:43,294 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/img/rightnav.gif desde ::1
+2013-06-29 16:52:43,301 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/img/closedcircle.png desde ::1
+2013-06-29 16:52:43,323 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/overlay.png desde ::1
+2013-06-29 16:52:45,808 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:52:45,821 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:52:45,831 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:52:46,641 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/Site.css desde ::1
+2013-06-29 16:52:47,624 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:52:51,222 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:52:52,870 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 16:52:53,187 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,188 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,188 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,205 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,218 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,241 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,354 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,404 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,405 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,404 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,442 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,474 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,591 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,592 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,611 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,612 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,665 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_año nuevo 2008_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,800 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,876 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,901 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,901 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,905 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,932 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,997 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-29 16:52:53,997 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,018 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,019 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,025 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,135 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,144 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,174 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,174 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,191 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,201 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,271 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,298 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,307 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,358 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,367 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,401 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,412 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,431 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,456 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,508 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Imágenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,508 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Imágenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,511 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Imágenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,520 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Imágenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-29 16:52:54,543 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Imágenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-29 16:52:58,540 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:53:01,879 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:53:03,320 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41766 desde ::1
+2013-06-29 16:53:03,418 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0067_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,419 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0071_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,530 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0073_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,530 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_pedro y marta_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,549 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0075_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,549 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_juanita linda_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,599 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_juanita_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,628 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,687 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_juany_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,752 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_navidad 2008 2_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,761 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_juany  y mama_0120_0120.jpg desde ::1
+2013-06-29 16:53:03,771 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Imágenes/BIR_juany y su esposo_0120_0120.jpg desde ::1
+2013-06-29 16:53:05,240 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:53:07,610 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:53:10,856 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:53:15,001 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 16:56:07,676 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:56:07,690 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:56:07,701 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:56:09,026 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:56:12,010 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:56:13,197 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 16:59:07,612 [8] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 16:59:08,878 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 16:59:12,616 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:59:12,649 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:59:12,662 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 16:59:14,615 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:59:18,407 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 16:59:20,038 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 16:59:22,460 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/loading_background.png desde ::1
+2013-06-29 16:59:22,464 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/controls.png desde ::1
+2013-06-29 16:59:22,484 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/loading.gif desde ::1
+2013-06-29 16:59:22,484 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/border.png desde ::1
+2013-06-29 16:59:31,383 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41767 desde ::1
+2013-06-29 16:59:33,631 [14] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41767 desde ::1
+2013-06-29 16:59:35,879 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41767 desde ::1
+2013-06-29 16:59:36,498 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41767 desde ::1
+2013-06-29 16:59:46,591 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41767 desde ::1
+2013-06-29 17:00:17,134 [18] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 17:00:34,092 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 17:00:38,348 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:00:38,369 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:00:38,381 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:00:41,259 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:00:44,735 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:00:46,339 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 17:00:49,324 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:00:52,832 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:00:54,165 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 17:00:56,094 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41766 desde ::1
+2013-06-29 17:01:02,597 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41766 desde ::1
+2013-06-29 17:01:04,926 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:01:09,019 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:01:10,646 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41774 desde ::1
+2013-06-29 17:01:10,783 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_alex_0120_0120.jpg desde ::1
+2013-06-29 17:01:36,256 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41774 desde ::1
+2013-06-29 17:01:55,285 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:01:57,691 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:02:02,763 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41768 desde ::1
+2013-06-29 17:02:05,169 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0083_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,169 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_jm en la cordillera_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,176 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0024_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,178 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0080_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,178 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0081_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,170 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_escanear0079_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,351 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_familia dalmati planas_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,355 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_navidad 2008_0120_0120.jpg desde ::1
+2013-06-29 17:02:05,449 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_dalmati planas_0120_0120.jpg desde ::1
+2013-06-29 17:02:08,144 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41767 desde ::1
+2013-06-29 17:02:10,489 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41766 desde ::1
+2013-06-29 17:02:11,313 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,326 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,332 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,344 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,377 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,434 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,456 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,558 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:11,569 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/img/graycircle.png desde ::1
+2013-06-29 17:02:13,475 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41768 desde ::1
+2013-06-29 17:02:19,785 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41770 desde ::1
+2013-06-29 17:02:20,007 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_lucia y tomas_0120_0120.jpg desde ::1
+2013-06-29 17:02:20,007 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_JDC y Lucía_0120_0120.jpg desde ::1
+2013-06-29 17:02:20,011 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_lucia y sus cachorros_0120_0120.jpg desde ::1
+2013-06-29 17:02:20,023 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_lucia planas conde_0120_0120.jpg desde ::1
+2013-06-29 17:02:20,053 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_carmen lucia en su nuñez_0120_0120.jpg desde ::1
+2013-06-29 17:02:20,113 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_lucia planas_0120_0120.jpg desde ::1
+2013-06-29 17:02:20,134 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis imágenes/BIR_lucia 2_0120_0120.jpg desde ::1
+2013-06-29 17:02:32,244 [15] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 17:02:46,904 [14] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 17:02:46,919 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613050245.zip&GetBytes=true desde ::1
+2013-06-29 17:02:47,519 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613050245.zip&StartByte=0&Complete=True desde ::1
+2013-06-29 17:02:47,622 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_290613050245.zip desde ::1
+2013-06-29 17:02:49,637 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 17:03:48,010 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF30 desde ::1
+2013-06-29 17:03:48,750 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/stepcarousel.js desde ::1
+2013-06-29 17:03:48,767 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/colorbox.css desde ::1
+2013-06-29 17:03:48,833 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/jquery.colorbox.js desde ::1
+2013-06-29 17:03:48,853 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/img/opencircle.png desde ::1
+2013-06-29 17:03:48,867 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/overlay.png desde ::1
+2013-06-29 17:03:53,688 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/IndividualPage.aspx?ID=XREF30 desde ::1
+2013-06-29 17:04:10,352 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:04:10,366 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:04:10,379 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:04:11,579 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:04:13,272 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:04:14,336 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41768 desde ::1
+2013-06-29 17:04:31,036 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF33 desde ::1
+2013-06-29 17:04:38,601 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF34 desde ::1
+2013-06-29 17:05:18,740 [9] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 17:05:29,364 [17] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 17:05:57,200 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613050556.zip&GetBytes=true desde ::1
+2013-06-29 17:05:57,850 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_290613050556.zip&StartByte=0&Complete=True desde ::1
+2013-06-29 17:05:57,968 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_290613050556.zip desde ::1
+2013-06-29 17:05:59,952 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?GetProgress=True desde ::1
+2013-06-29 17:06:47,295 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I105502 desde ::1
+2013-06-29 17:14:47,215 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Databound desde ::1
+2013-06-29 17:14:47,217 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Databound desde ::1
+2013-06-29 17:15:24,425 [12] INFO  Gedcom.Web.Process GCR detenido
+2013-06-29 17:15:55,616 [13] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-29 17:16:47,877 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:16:47,897 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:16:47,910 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-29 17:16:49,492 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:16:53,088 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:16:55,374 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 17:16:55,695 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/img/icon-notes.png desde ::1
+2013-06-29 17:16:58,792 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41767 desde ::1
+2013-06-29 17:17:09,714 [12] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41766 desde ::1
+2013-06-29 17:17:12,067 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41766 desde ::1
+2013-06-29 17:17:13,305 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:17:15,621 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-29 17:17:17,688 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I42192 desde ::1
+2013-06-29 17:17:28,276 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I42193 desde ::1
+2013-06-29 17:17:29,784 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42193 desde ::1
+2013-06-29 17:17:32,944 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42193 desde ::1
+2013-06-29 17:17:34,500 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42180 desde ::1
+2013-06-29 17:17:36,121 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I42194 desde ::1
+2013-06-29 17:17:37,009 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42180 desde ::1
+2013-06-29 17:17:37,741 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I42193 desde ::1
+2013-06-29 17:17:39,682 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42180 desde ::1
+2013-06-29 17:17:41,218 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42192 desde ::1
+2013-06-29 17:17:47,641 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42180 desde ::1
+2013-06-29 17:17:48,770 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I42180 desde ::1
+2013-06-29 17:17:50,020 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41757 desde ::1
+2013-06-29 17:17:54,602 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41757 desde ::1
+2013-06-29 17:17:56,389 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41757 desde ::1
+2013-06-29 17:17:57,844 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41757 desde ::1
+2013-06-29 17:17:59,989 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41757 desde ::1
+2013-06-29 17:18:04,050 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41762 desde ::1
+2013-06-29 17:18:06,778 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41762 desde ::1
+2013-06-29 17:18:08,190 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41762 desde ::1
+2013-06-29 17:18:09,619 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=I41765 desde ::1
+2013-06-29 17:18:12,130 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?Id=I41765 desde ::1
+2013-06-29 17:18:19,314 [9] INFO  Gedcom.Web.Process GCR detenido

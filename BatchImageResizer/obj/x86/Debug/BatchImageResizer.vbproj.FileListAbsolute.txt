@@ -1,0 +1,9 @@
+d:\prog\BatchImageResizer\bin\Debug\BatchImageResizer.exe
+d:\prog\BatchImageResizer\bin\Debug\BatchImageResizer.pdb
+d:\prog\BatchImageResizer\bin\Debug\BatchImageResizer.xml
+d:\prog\BatchImageResizer\obj\x86\Debug\BatchImageResizer.Form1.resources
+d:\prog\BatchImageResizer\obj\x86\Debug\BatchImageResizer.Resources.resources
+d:\prog\BatchImageResizer\obj\x86\Debug\BatchImageResizer.vbproj.GenerateResource.Cache
+d:\prog\BatchImageResizer\obj\x86\Debug\BatchImageResizer.exe
+d:\prog\BatchImageResizer\obj\x86\Debug\BatchImageResizer.xml
+d:\prog\BatchImageResizer\obj\x86\Debug\BatchImageResizer.pdb

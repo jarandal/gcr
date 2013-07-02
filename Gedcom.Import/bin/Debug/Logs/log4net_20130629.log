@@ -1,0 +1,42 @@
+2013-06-29 01:41:53,239 [6] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 01:43:59,436 [6] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=126196
+2013-06-29 01:43:59,438 [6] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 01:56:02,596 [6] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 16:00:12,964 [6] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:01:57,702 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:02:15,299 [7] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:02:52,979 [6] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:05:53,245 [6] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:14:18,083 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:20:00,592 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:24:16,992 [11] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:28:25,860 [11] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:30:43,749 [11] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:44:55,780 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:44:58,477 [10] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=2697
+2013-06-29 16:44:58,479 [10] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 16:44:58,534 [10] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 16:48:11,840 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:48:11,940 [10] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=101
+2013-06-29 16:48:11,942 [10] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 16:48:11,974 [10] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 16:48:48,490 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:48:48,589 [10] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=101
+2013-06-29 16:48:48,591 [10] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 16:48:48,622 [10] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 16:50:04,804 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:50:04,905 [10] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=102
+2013-06-29 16:50:04,907 [10] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 16:50:04,944 [10] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 16:51:12,397 [10] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 16:51:12,496 [10] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=99
+2013-06-29 16:51:12,498 [10] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 16:51:12,579 [10] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 17:02:45,547 [6] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 17:02:45,649 [6] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=103
+2013-06-29 17:02:45,651 [6] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 17:02:45,686 [6] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql
+2013-06-29 17:05:56,910 [6] INFO  System.Diagnostics.Process Inicia la lectura del archivo gedcom
+2013-06-29 17:05:57,010 [6] INFO  System.Diagnostics.Process Fin de la lectura del archivo gedcom, Milisegundos=100
+2013-06-29 17:05:57,012 [6] INFO  System.Diagnostics.Process Inicia la generacion del archivo sql
+2013-06-29 17:05:57,045 [6] INFO  System.Diagnostics.Process Finaliza la generacion del archivo sql

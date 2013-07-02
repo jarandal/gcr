@@ -1,0 +1,73 @@
+﻿'---------------------------------------------------------------------------------------------------------
+'---------------------------------------------------------------------------------------------------------
+'---------------------------------------------------------------------------------------------------------
+        ''Dim familiesRange(Paralellism) As Range
+        ''Dim individualsRange(Paralellism) As Range
+
+
+        ''For i = 0 To Paralellism - 1
+
+        ''    familiesRange(i) = New Range
+        ''    familiesRange(i).start_index = CLng(familiesTotal / Paralellism) * i
+        ''    If i < Paralellism - 1 Then
+        ''        familiesRange(i).end_index = CLng(familiesTotal / Paralellism) * i + CLng(familiesTotal / Paralellism) - 1
+        ''    Else
+        ''        familiesRange(i).end_index = familiesTotal - 1
+        ''    End If
+
+        ''    individualsRange(i) = New Range
+        ''    individualsRange(i).start_index = CLng(individualsTotal / Paralellism) * i
+        ''    If i < Paralellism - 1 Then
+        ''        individualsRange(i).end_index = CLng(individualsTotal / Paralellism) * i + CLng(individualsTotal / Paralellism) - 1
+        ''    Else
+        ''        individualsRange(i).end_index = individualsTotal - 1
+        ''    End If
+
+        ''Next
+
+
+
+        ' ''\\ individuos y familias en secuencia, con paralelismo
+        ''strInfo = "individuos y familias en secuencia, con paralelismo"
+        ''Parallel.For(0, Paralellism, _
+        ''             Sub(index)
+        ''                 importFamiliesRange(gcd, familiesRange(index).start_index, familiesRange(index).end_index, connectionstring)
+        ''             End Sub)
+        ''Parallel.For(0, Paralellism, _
+        ''             Sub(index)
+        ''                 importIndividualRange(gcd, individualsRange(index).start_index, individualsRange(index).end_index, connectionstring)
+        ''             End Sub)
+
+        '\\ individuos y familias en paralelo
+        strInfo = "Individuos y familias en paralelo"
+        Parallel.For(0, 2, _
+                     Sub(index)
+                         Select Case index
+                             Case 0
+                                 importFamiliesRange(gcd, 0, gcd.Families.Count - 1, connectionstring)
+                             Case 1
+                                 importIndividualRange(gcd, 0, gcd.Individuals.Count - 1, connectionstring)
+                         End Select
+                     End Sub)
+
+        ''strInfo = "Individuos y familias por rangos en paralelo"
+        ''Parallel.For(0, Paralellism, _
+        ''             Sub(index)
+        ''                 importFamiliesRange(gcd, familiesRange(index).start_index, familiesRange(index).end_index, connectionstring)
+        ''                 importIndividualRange(gcd, individualsRange(index).start_index, individualsRange(index).end_index, connectionstring)
+        ''             End Sub)
+
+        ''strInfo = "Individuos y familias por rangos en paralelo al cuadrado"
+        ''Parallel.For(0, Paralellism, _
+        ''             Sub(index)
+        ''                 Parallel.For(0, 2, _
+        ''                        Sub(index2)
+        ''                            Select Case index2
+        ''                                Case 0
+        ''                                    importFamiliesRange(gcd, familiesRange(index).start_index, familiesRange(index).end_index, connectionstring)
+        ''                                Case 1
+        ''                                    importIndividualRange(gcd, individualsRange(index).start_index, individualsRange(index).end_index, connectionstring)
+        ''                            End Select
+        ''                        End Sub)
+        ''             End Sub)
+'---------------------------------------------------------------------------------------------------------

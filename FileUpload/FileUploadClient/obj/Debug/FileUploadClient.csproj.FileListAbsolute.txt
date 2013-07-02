@@ -1,0 +1,5 @@
+D:\Prog\Gedcom.net\FileUpload\FileUploadClient\bin\Debug\FileUploadClient.dll
+D:\Prog\Gedcom.net\FileUpload\FileUploadClient\bin\Debug\FileUploadClient.pdb
+D:\Prog\Gedcom.net\FileUpload\FileUploadClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Prog\Gedcom.net\FileUpload\FileUploadClient\obj\Debug\FileUploadClient.dll
+D:\Prog\Gedcom.net\FileUpload\FileUploadClient\obj\Debug\FileUploadClient.pdb

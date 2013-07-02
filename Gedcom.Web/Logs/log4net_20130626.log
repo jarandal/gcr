@@ -1,0 +1,551 @@
+2013-06-26 13:34:25,133 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-26 13:34:27,426 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/test.htm desde ::1
+2013-06-26 13:34:27,535 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/colorbox.css desde ::1
+2013-06-26 13:34:27,567 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/stepcarousel.js desde ::1
+2013-06-26 13:34:27,567 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/jquery.colorbox.js desde ::1
+2013-06-26 13:34:27,567 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/img/opencircle.png desde ::1
+2013-06-26 13:34:27,847 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/img/leftnav.gif desde ::1
+2013-06-26 13:34:27,863 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/img/rightnav.gif desde ::1
+2013-06-26 13:34:28,035 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/img/closedcircle.png desde ::1
+2013-06-26 13:34:28,050 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/overlay.png desde ::1
+2013-06-26 13:34:31,513 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-26 13:34:31,529 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-26 13:34:31,529 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-26 13:34:32,683 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/Site.css desde ::1
+2013-06-26 13:34:40,811 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:34:44,758 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:34:47,956 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF87608 desde ::1
+2013-06-26 13:34:49,594 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,594 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,594 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,594 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,641 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,734 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,734 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,734 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,734 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,766 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,797 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,828 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,828 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,828 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,859 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,875 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,875 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_a+¦o nuevo 2008_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,890 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,922 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-26 13:34:49,968 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,000 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,046 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,062 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,093 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,093 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,109 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,124 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,124 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,140 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,171 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,218 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,249 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,265 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,265 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,265 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,312 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,374 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,374 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,390 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,390 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,405 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,483 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,514 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,577 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,577 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,592 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,639 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-26 13:34:50,655 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-26 13:38:03,845 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/border.png desde ::1
+2013-06-26 13:38:03,845 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/controls.png desde ::1
+2013-06-26 13:38:03,891 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/loading_background.png desde ::1
+2013-06-26 13:38:03,891 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/images/loading.gif desde ::1
+2013-06-26 13:39:36,482 [16] INFO  Gedcom.Web.Process GCR detenido
+2013-06-26 13:39:42,894 [5] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-26 13:39:49,415 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-26 13:39:49,430 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-26 13:39:49,446 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/ desde ::1
+2013-06-26 13:39:51,661 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:39:56,419 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:39:58,899 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF87608 desde ::1
+2013-06-26 13:39:59,664 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,664 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,664 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,679 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,679 [17] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,695 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,757 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,757 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,804 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,820 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,820 [17] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,882 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,882 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,882 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,898 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,945 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_a+¦o nuevo 2008_0120_0120.jpg desde ::1
+2013-06-26 13:39:59,991 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,007 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,023 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,038 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,038 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,054 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,038 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,085 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,116 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,116 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,116 [17] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,132 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,147 [15] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,163 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,194 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,194 [17] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,194 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,210 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,241 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,241 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,257 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,288 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,288 [17] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,288 [26] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,319 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,335 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,335 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,366 [26] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,366 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,381 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,381 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-26 13:40:00,397 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-26 13:40:05,748 [19] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0060_0800_0600.jpg desde ::1
+2013-06-26 13:40:05,782 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0061_0800_0600.jpg desde ::1
+2013-06-26 13:40:05,797 [26] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_familia_0800_0600.jpg desde ::1
+2013-06-26 13:41:12,756 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF87608 desde ::1
+2013-06-26 13:41:13,089 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,089 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,089 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,089 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,104 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,104 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,198 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,198 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,214 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,214 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,214 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,229 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,276 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,292 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,338 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,370 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,370 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,370 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_a+¦o nuevo 2008_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,463 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,463 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,479 [22] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,479 [25] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,479 [16] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,526 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,526 [13] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,557 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,557 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,619 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,619 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,619 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,635 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,713 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,713 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,728 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,728 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,760 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,760 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,760 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,791 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,806 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,806 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,822 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,838 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis im+ígenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,838 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,853 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,853 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,869 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-26 13:41:13,884 [20] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/Mis Im+ígenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-26 13:41:15,772 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:41:21,700 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:41:23,260 [18] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF100011 desde ::1
+2013-06-26 13:41:26,474 [24] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF100023 desde ::1
+2013-06-26 13:41:29,063 [23] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF100041 desde ::1
+2013-06-26 13:41:43,849 [21] INFO  Gedcom.Web.Process Página visitada: /gcr/gcr/IndividualPage.aspx?ID=XREF100551 desde ::1
+2013-06-26 13:52:40,266 [18] INFO  Gedcom.Web.Process GCR detenido
+2013-06-26 13:56:02,608 [32] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-26 13:56:02,624 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/ desde ::1
+2013-06-26 13:56:02,624 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/ desde ::1
+2013-06-26 13:56:02,624 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/ desde ::1
+2013-06-26 13:56:03,388 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/Site.css desde ::1
+2013-06-26 13:56:05,042 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:56:12,717 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:57:14,680 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:57:19,251 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:57:33,541 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:57:36,208 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF87608 desde ::1
+2013-06-26 13:57:37,846 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/Scripts/stepcarousel.js desde ::1
+2013-06-26 13:57:37,909 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/colorbox.css desde ::1
+2013-06-26 13:57:37,956 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/Scripts/jquery.colorbox.js desde ::1
+2013-06-26 13:57:37,987 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-26 13:57:37,987 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-26 13:57:37,987 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a+¦o nuevo 2008_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,002 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,018 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,018 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,018 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,018 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,049 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,065 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,080 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,112 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,112 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,112 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,112 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-26 13:57:38,112 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/img/opencircle.png desde ::1
+2013-06-26 13:57:38,112 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/img/leftnav.gif desde ::1
+2013-06-26 13:57:38,112 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/img/rightnav.gif desde ::1
+2013-06-26 13:57:38,127 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/images/overlay.png desde ::1
+2013-06-26 13:57:38,127 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/img/closedcircle.png desde ::1
+2013-06-26 13:57:41,497 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/img/graycircle.png desde ::1
+2013-06-26 13:57:42,885 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF87608 desde ::1
+2013-06-26 13:57:43,153 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,153 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,169 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,169 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a+¦o nuevo 2008_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,169 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,184 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,215 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,215 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,215 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,215 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,215 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,215 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,247 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,262 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,278 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,278 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,309 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,309 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,309 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,325 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-26 13:57:43,325 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,072 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF87608 desde ::1
+2013-06-26 13:57:45,308 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0061_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,308 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0064_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,324 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0062_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,324 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0060_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,324 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0069_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,324 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0066_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0065_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0074_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0077_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0063_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0070_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc e hijos_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_campeonato boga 15 dic 1946_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a+¦o nuevo 2008_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,371 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 5_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 1_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 2_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 3_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 4_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 6_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 7_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 8_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 9_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 10_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 11_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 12_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 13_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 15_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 19_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,386 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_juan papa , mama, tano y juan_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 16_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 18_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 17_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 21_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jdc 20_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 1_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 3_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de mi hija nena 2_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_matrimonio de nena_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan dalmati en 1946_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_familia_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan y  juany_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_juan dalmati 10_0120_0120.jpg desde ::1
+2013-06-26 13:57:45,402 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_flori_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,475 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF87664 desde ::1
+2013-06-26 13:57:48,725 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0024_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0071_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0067_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0079_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0081_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0078_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0080_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0083_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_jm en la cordillera_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,740 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_todos_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,740 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_familia dalmati planas_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,740 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_navidad 2008_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,740 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_dalmati planas_0120_0120.jpg desde ::1
+2013-06-26 13:57:48,725 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0072_0120_0120.jpg desde ::1
+2013-06-26 13:57:54,949 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/Default.aspx desde ::1
+2013-06-26 13:57:56,103 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:58:01,485 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/SearchPage.aspx desde ::1
+2013-06-26 13:58:05,432 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF103986 desde ::1
+2013-06-26 13:58:07,101 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/images/border.png desde ::1
+2013-06-26 13:58:07,137 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/images/controls.png desde ::1
+2013-06-26 13:58:07,142 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/images/loading_background.png desde ::1
+2013-06-26 13:58:07,258 [37] INFO  Gedcom.Web.Process Página visitada: /GCR/Styles/images/loading.gif desde ::1
+2013-06-26 13:58:46,281 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF18452 desde ::1
+2013-06-26 13:58:51,882 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF181 desde ::1
+2013-06-26 13:58:52,053 [37] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a o'higgins_0120_0120.jpg desde ::1
+2013-06-26 13:58:52,053 [37] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a_ohiggins_g_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,267 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF186 desde ::1
+2013-06-26 13:58:55,860 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0115_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,860 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h 2_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [37] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_O'h_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_casa donde nacio bernardo_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0112_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0113_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_imagenes_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_el libertador b o'h_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_batalla de rancagua2_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_abdicacionOHiggins[1]_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h 3_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,891 [37] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_batalla de rancagua 2_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,907 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_alameda crea por O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,907 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_Catedral de Santiago con las gradas que subi+¦ O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,907 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_cruce de los andes_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,922 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_padre de la patria_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,922 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_El abrazo de O'Higgins y San Mart+¡n en Maip+¦_0120_0120.jpg desde ::1
+2013-06-26 13:58:55,922 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_carta de Bernardo O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 13:58:57,264 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a o'higgins_0120_0120.jpg desde ::1
+2013-06-26 13:58:57,264 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a_ohiggins_g_0120_0120.jpg desde ::1
+2013-06-26 13:59:05,329 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?Id=XREF2336 desde ::1
+2013-06-26 13:59:42,656 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF181 desde ::1
+2013-06-26 13:59:42,827 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a o'higgins_0120_0120.jpg desde ::1
+2013-06-26 13:59:42,827 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_a_ohiggins_g_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,459 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF186 desde ::1
+2013-06-26 13:59:48,771 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_casa donde nacio bernardo_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,771 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0112_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_O'h_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0115_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_el libertador b o'h_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h 2_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0113_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_imagenes_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_batalla de rancagua2_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_abdicacionOHiggins[1]_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_batalla de rancagua 2_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h 3_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,786 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_padre de la patria_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,802 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_El abrazo de O'Higgins y San Mart+¡n en Maip+¦_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,802 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_carta de Bernardo O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,802 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_alameda crea por O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,802 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_Catedral de Santiago con las gradas que subi+¦ O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 13:59:48,802 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_cruce de los andes_0120_0120.jpg desde ::1
+2013-06-26 14:00:00,639 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/IndividualPage.aspx?ID=XREF216 desde ::1
+2013-06-26 14:00:00,842 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_demetrio o'higgins_0120_0120.jpg desde ::1
+2013-06-26 14:00:00,842 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_demetrio_0120_0120.jpg desde ::1
+2013-06-26 14:00:00,842 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0137_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,886 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h 2_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,886 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_O'h_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,886 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0112_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,886 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_casa donde nacio bernardo_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,886 [31] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_el libertador b o'h_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0113_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_abdicacionOHiggins[1]_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_o'h 3_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_batalla de rancagua 2_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [30] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_escanear0115_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [33] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_padre de la patria_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [31] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_batalla de rancagua2_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_alameda crea por O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,917 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_El abrazo de O'Higgins y San Mart+¡n en Maip+¦_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [36] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_Catedral de Santiago con las gradas que subi+¦ O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,901 [35] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis im+ígenes/BIR_imagenes_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,917 [14] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_cruce de los andes_0120_0120.jpg desde ::1
+2013-06-26 14:00:02,933 [34] INFO  Gedcom.Web.Process Página visitada: /GCR/gcr/Mis Im+ígenes/BIR_carta de Bernardo O'Higgins_0120_0120.jpg desde ::1
+2013-06-26 14:09:18,499 [19] INFO  Gedcom.Web.Process GCR detenido
+2013-06-26 15:55:27,791 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-26 15:55:27,822 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&GetBytes=true desde ::1
+2013-06-26 15:55:28,446 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=0&Complete=False desde ::1
+2013-06-26 15:55:28,540 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=2498560&Complete=False desde ::1
+2013-06-26 15:55:28,571 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=4997120&Complete=False desde ::1
+2013-06-26 15:55:28,633 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=7495680&Complete=False desde ::1
+2013-06-26 15:55:28,680 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=9994240&Complete=False desde ::1
+2013-06-26 15:55:28,789 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=12492800&Complete=False desde ::1
+2013-06-26 15:55:28,867 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=14991360&Complete=False desde ::1
+2013-06-26 15:55:28,898 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=17489920&Complete=False desde ::1
+2013-06-26 15:55:28,961 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=19988480&Complete=False desde ::1
+2013-06-26 15:55:29,008 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=22487040&Complete=False desde ::1
+2013-06-26 15:55:29,086 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=24985600&Complete=False desde ::1
+2013-06-26 15:55:29,195 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=27484160&Complete=False desde ::1
+2013-06-26 15:55:29,257 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=29982720&Complete=False desde ::1
+2013-06-26 15:55:29,304 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=32481280&Complete=False desde ::1
+2013-06-26 15:55:29,351 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=34979840&Complete=False desde ::1
+2013-06-26 15:55:29,710 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=37478400&Complete=False desde ::1
+2013-06-26 15:55:29,756 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=39976960&Complete=False desde ::1
+2013-06-26 15:55:30,131 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=42475520&Complete=False desde ::1
+2013-06-26 15:55:30,458 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=44974080&Complete=False desde ::1
+2013-06-26 15:55:30,490 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=47472640&Complete=False desde ::1
+2013-06-26 15:55:30,536 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=49971200&Complete=False desde ::1
+2013-06-26 15:55:30,583 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=52469760&Complete=False desde ::1
+2013-06-26 15:55:30,614 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=54968320&Complete=False desde ::1
+2013-06-26 15:55:30,661 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=57466880&Complete=False desde ::1
+2013-06-26 15:55:30,708 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=59965440&Complete=False desde ::1
+2013-06-26 15:55:30,739 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=62464000&Complete=False desde ::1
+2013-06-26 15:55:30,802 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=64962560&Complete=False desde ::1
+2013-06-26 15:55:30,833 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=67461120&Complete=False desde ::1
+2013-06-26 15:55:30,880 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=69959680&Complete=False desde ::1
+2013-06-26 15:55:30,958 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=72458240&Complete=False desde ::1
+2013-06-26 15:55:31,067 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=74956800&Complete=False desde ::1
+2013-06-26 15:55:31,114 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=77455360&Complete=False desde ::1
+2013-06-26 15:55:31,145 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=79953920&Complete=False desde ::1
+2013-06-26 15:55:31,192 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=82452480&Complete=False desde ::1
+2013-06-26 15:55:31,223 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=84951040&Complete=False desde ::1
+2013-06-26 15:55:31,254 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=87449600&Complete=False desde ::1
+2013-06-26 15:55:31,348 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=89948160&Complete=False desde ::1
+2013-06-26 15:55:31,379 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=92446720&Complete=False desde ::1
+2013-06-26 15:55:31,426 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=94945280&Complete=False desde ::1
+2013-06-26 15:55:31,472 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=97443840&Complete=False desde ::1
+2013-06-26 15:55:31,550 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=99942400&Complete=False desde ::1
+2013-06-26 15:55:31,597 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=102440960&Complete=False desde ::1
+2013-06-26 15:55:31,629 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=104939520&Complete=False desde ::1
+2013-06-26 15:55:31,675 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=107438080&Complete=False desde ::1
+2013-06-26 15:55:31,722 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=109936640&Complete=False desde ::1
+2013-06-26 15:55:32,471 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=112435200&Complete=False desde ::1
+2013-06-26 15:55:32,502 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=114933760&Complete=False desde ::1
+2013-06-26 15:55:32,549 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=117432320&Complete=False desde ::1
+2013-06-26 15:55:32,627 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=119930880&Complete=False desde ::1
+2013-06-26 15:55:32,689 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=122429440&Complete=False desde ::1
+2013-06-26 15:55:32,721 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=124928000&Complete=False desde ::1
+2013-06-26 15:55:32,767 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=127426560&Complete=False desde ::1
+2013-06-26 15:55:33,157 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=129925120&Complete=False desde ::1
+2013-06-26 15:55:33,204 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=132423680&Complete=False desde ::1
+2013-06-26 15:55:33,251 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=134922240&Complete=False desde ::1
+2013-06-26 15:55:33,298 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=137420800&Complete=False desde ::1
+2013-06-26 15:55:33,376 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=139919360&Complete=False desde ::1
+2013-06-26 15:55:33,407 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=142417920&Complete=False desde ::1
+2013-06-26 15:55:33,438 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=144916480&Complete=False desde ::1
+2013-06-26 15:55:33,485 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=147415040&Complete=False desde ::1
+2013-06-26 15:55:33,532 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=149913600&Complete=False desde ::1
+2013-06-26 15:55:33,579 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=152412160&Complete=False desde ::1
+2013-06-26 15:55:33,625 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=154910720&Complete=False desde ::1
+2013-06-26 15:55:33,672 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=157409280&Complete=False desde ::1
+2013-06-26 15:55:33,719 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=159907840&Complete=False desde ::1
+2013-06-26 15:55:33,750 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=162406400&Complete=False desde ::1
+2013-06-26 15:55:33,797 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=164904960&Complete=False desde ::1
+2013-06-26 15:55:33,828 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=167403520&Complete=False desde ::1
+2013-06-26 15:55:33,875 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=169902080&Complete=False desde ::1
+2013-06-26 15:55:33,906 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=172400640&Complete=False desde ::1
+2013-06-26 15:55:33,953 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=174899200&Complete=False desde ::1
+2013-06-26 15:55:34,015 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=177397760&Complete=False desde ::1
+2013-06-26 15:55:34,047 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=179896320&Complete=False desde ::1
+2013-06-26 15:55:34,078 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=182394880&Complete=False desde ::1
+2013-06-26 15:55:34,515 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=184893440&Complete=False desde ::1
+2013-06-26 15:55:34,546 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=187392000&Complete=False desde ::1
+2013-06-26 15:55:34,593 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=189890560&Complete=False desde ::1
+2013-06-26 15:55:34,624 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=192389120&Complete=False desde ::1
+2013-06-26 15:55:34,671 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=194887680&Complete=False desde ::1
+2013-06-26 15:55:34,733 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=197386240&Complete=False desde ::1
+2013-06-26 15:55:35,123 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=199884800&Complete=False desde ::1
+2013-06-26 15:55:35,154 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=202383360&Complete=False desde ::1
+2013-06-26 15:55:35,201 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=204881920&Complete=False desde ::1
+2013-06-26 15:55:35,232 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=207380480&Complete=False desde ::1
+2013-06-26 15:55:35,279 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=209879040&Complete=False desde ::1
+2013-06-26 15:55:35,326 [6] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=212377600&Complete=False desde ::1
+2013-06-26 15:55:35,357 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/FileUpload.ashx?filename=BIR_260613035357.ZIP&StartByte=214876160&Complete=True desde ::1
+2013-06-26 15:55:35,451 [5] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_260613035357.ZIP desde ::1
+2013-06-26 15:59:11,074 [5] ERROR Gedcom.Web.Process System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'individuals'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Gedcom.Model.GcrContext.RestoreServerDatabase(String filename) en D:\Prog\Gedcom.net\Gedcom.Model\GcrContext.vb:línea 211
+   en Gedcom.Web.Process.ProcessRequest(HttpContext context) en D:\Prog\Gedcom.net\Gedcom.Web\Process.ashx.vb:línea 36
+2013-06-26 16:19:27,050 [35] INFO  Gedcom.Web.Process GCR detenido
+2013-06-26 16:25:19,783 [1] INFO  Gedcom.Web.Process GCR iniciado
+2013-06-26 16:25:50,515 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/Process.ashx?filename=BIR_260613035357.ZIP desde ::1
+2013-06-26 16:43:56,355 [5] INFO  Gedcom.Web.Process GCR detenido

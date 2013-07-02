@@ -1,0 +1,11 @@
+D:\Prog\Gedcom.net\Gedcom.Model\bin\Debug\Gedcom.Model.dll.config
+D:\Prog\Gedcom.net\Gedcom.Model\bin\Debug\Gedcom.Model.dll
+D:\Prog\Gedcom.net\Gedcom.Model\bin\Debug\Gedcom.Model.pdb
+D:\Prog\Gedcom.net\Gedcom.Model\bin\Debug\Gedcom.Model.xml
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\Gedcom.Model.Resources.resources
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\GenerateResource.read.1.tlog
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\GenerateResource.write.1.tlog
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\Gedcom.Model.dll
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\Gedcom.Model.xml
+D:\Prog\Gedcom.net\Gedcom.Model\obj\Debug\Gedcom.Model.pdb

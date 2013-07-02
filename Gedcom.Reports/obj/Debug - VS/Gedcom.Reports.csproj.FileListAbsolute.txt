@@ -1,0 +1,9 @@
+D:\Prog\Gedcom.net\Gedcom.Reports\obj\Debug - VS\Gedcom.Reports.csprojResolveAssemblyReference.cache
+D:\Prog\Gedcom.net\Gedcom.Reports\bin\Debug - VS\Gedcom.Reports.dll
+D:\Prog\Gedcom.net\Gedcom.Reports\bin\Debug - VS\Gedcom.Reports.pdb
+D:\Prog\Gedcom.net\Gedcom.Reports\bin\Debug - VS\Gedcom.dll
+D:\Prog\Gedcom.net\Gedcom.Reports\bin\Debug - VS\Utility.dll
+D:\Prog\Gedcom.net\Gedcom.Reports\bin\Debug - VS\Gedcom.pdb
+D:\Prog\Gedcom.net\Gedcom.Reports\bin\Debug - VS\Utility.pdb
+D:\Prog\Gedcom.net\Gedcom.Reports\obj\Debug - VS\Gedcom.Reports.dll
+D:\Prog\Gedcom.net\Gedcom.Reports\obj\Debug - VS\Gedcom.Reports.pdb

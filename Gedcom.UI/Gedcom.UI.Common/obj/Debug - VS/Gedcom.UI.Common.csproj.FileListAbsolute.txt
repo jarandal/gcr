@@ -1,0 +1,9 @@
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\obj\Debug - VS\Gedcom.UI.Common.csprojResolveAssemblyReference.cache
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\bin\Debug - VS\Gedcom.UI.Common.dll
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\bin\Debug - VS\Gedcom.UI.Common.pdb
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\bin\Debug - VS\Gedcom.dll
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\bin\Debug - VS\Utility.dll
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\bin\Debug - VS\Gedcom.pdb
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\bin\Debug - VS\Utility.pdb
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\obj\Debug - VS\Gedcom.UI.Common.dll
+D:\Prog\Gedcom.net\Gedcom.UI\Gedcom.UI.Common\obj\Debug - VS\Gedcom.UI.Common.pdb
