@@ -64,20 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\FileUpload.xap" />
-    <Content Include="Default.aspx" />
     <Content Include="FileUploadTestPage.aspx" />
     <Content Include="FileUploadTestPage.html" />
     <Content Include="Silverlight.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="FileUpload.ashx.cs">
       <DependentUpon>FileUpload.ashx</DependentUpon>
     </Compile>

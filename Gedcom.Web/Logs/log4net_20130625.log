@@ -1,7 +1,0 @@
-2013-06-25 12:07:01,226 [1] INFO  Gedcom.Web.Process GCR iniciado
-2013-06-25 12:07:03,004 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/test.htm desde ::1
-2013-06-25 12:07:03,441 [9] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/jquery.colorbox.js desde ::1
-2013-06-25 12:07:03,441 [11] INFO  Gedcom.Web.Process Página visitada: /gcr/Scripts/stepcarousel.js desde ::1
-2013-06-25 12:07:03,441 [10] INFO  Gedcom.Web.Process Página visitada: /gcr/Styles/colorbox.css desde ::1
-2013-06-25 12:07:03,457 [8] INFO  Gedcom.Web.Process Página visitada: /gcr/img/opencircle.png desde ::1
-2013-06-25 12:07:36,809 [8] INFO  Gedcom.Web.Process GCR detenido

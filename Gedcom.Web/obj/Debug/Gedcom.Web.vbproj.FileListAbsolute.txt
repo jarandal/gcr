@@ -15,7 +15,6 @@ D:\Prog\Gedcom.net\Gedcom.Web\bin\log4net.dll
 D:\Prog\Gedcom.net\Gedcom.Web\bin\SilverlightFileUploadWeb.dll
 D:\Prog\Gedcom.net\Gedcom.Web\bin\DC.SilverlightFileUpload.dll
 D:\Prog\Gedcom.net\Gedcom.Web\bin\Utility.dll
-D:\Prog\Gedcom.net\Gedcom.Web\bin\System.Web.Silverlight.dll
 D:\Prog\Gedcom.net\Gedcom.Web\bin\SilverlightFileUploadWeb.pdb
 D:\Prog\Gedcom.net\Gedcom.Web\bin\Gedcom.BL.pdb
 D:\Prog\Gedcom.net\Gedcom.Web\bin\Gedcom.BL.xml
