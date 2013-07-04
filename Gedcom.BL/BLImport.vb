@@ -363,7 +363,7 @@ Public Class BLImport
                 End If
             End If
         End If
-
+        Dim aux As String = individual.UserReferenceNumber()
 
         For Each MMindex In individual.Multimedia
             Dim auxMMIndex As String = MMindex

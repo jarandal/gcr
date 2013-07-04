@@ -115,6 +115,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="POCO\Request.vb">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="SearchOptions.vb" />
     <Compile Include="Util.vb" />
   </ItemGroup>

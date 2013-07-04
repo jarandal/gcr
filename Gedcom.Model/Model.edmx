@@ -10,6 +10,19 @@
           <EntitySet Name="Families" EntityType="Model.Store.Families" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Individuals" EntityType="Model.Store.Individuals" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Media" EntityType="Model.Store.Media" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Request" EntityType="Model.Store.Request" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Childrens" Association="Model.Store.FK_Childrens">
+            <End Role="Families" EntitySet="Families" />
+            <End Role="Individuals" EntitySet="Individuals" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IndividualEvent" Association="Model.Store.FK_IndividualEvent">
+            <End Role="Individuals" EntitySet="Individuals" />
+            <End Role="Events" EntitySet="Events" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Media_Individuals" Association="Model.Store.FK_Media_Individuals">
+            <End Role="Individuals" EntitySet="Individuals" />
+            <End Role="Media" EntitySet="Media" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Events">
           <Key>
@@ -62,6 +75,58 @@
           <Property Name="SortOrder" Type="int" />
           <Property Name="Individual_Id" Type="nvarchar" MaxLength="200" />
         </EntityType>
+        <EntityType Name="Request">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Name" Type="nvarchar" MaxLength="200" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="200" />
+          <Property Name="Text" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Original_Id" Type="nvarchar" MaxLength="200" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="Reason" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="AttachmentsQty" Type="int" Nullable="false" />
+          <Property Name="Attachments" Type="nvarchar" MaxLength="2000" />
+        </EntityType>
+        <Association Name="FK_Childrens">
+          <End Role="Families" Type="Model.Store.Families" Multiplicity="0..1" />
+          <End Role="Individuals" Type="Model.Store.Individuals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Families">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Individuals">
+              <PropertyRef Name="Family_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IndividualEvent">
+          <End Role="Individuals" Type="Model.Store.Individuals" Multiplicity="1" />
+          <End Role="Events" Type="Model.Store.Events" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Individuals">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Events">
+              <PropertyRef Name="Individual_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Media_Individuals">
+          <End Role="Individuals" Type="Model.Store.Individuals" Multiplicity="0..1" />
+          <End Role="Media" Type="Model.Store.Media" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Individuals">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Media">
+              <PropertyRef Name="Individual_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -83,6 +148,7 @@
             <End Role="Individual" EntitySet="Individuals" />
             <End Role="Media" EntitySet="Media" />
           </AssociationSet>
+          <EntitySet Name="Request" EntityType="Model.Request" />
         </EntityContainer>
         <EntityType Name="Event">
           <Key>
@@ -177,6 +243,22 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Request">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Phone" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Text" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Original_Id" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="String" Name="IP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reason" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="AttachmentsQty" Nullable="false" />
+          <Property Type="String" Name="Attachments" MaxLength="2000" FixedLength="false" Unicode="true" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -238,6 +320,23 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Request">
+            <EntityTypeMapping TypeName="Model.Request">
+              <MappingFragment StoreEntitySet="Request">
+                <ScalarProperty Name="Attachments" ColumnName="Attachments" />
+                <ScalarProperty Name="AttachmentsQty" ColumnName="AttachmentsQty" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Original_Id" ColumnName="Original_Id" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
 </Mapping></edmx:Mappings>
   </edmx:Runtime>
@@ -276,6 +375,7 @@
           <ConnectorPoint PointX="4.5" PointY="4.9228011067708328" />
           <ConnectorPoint PointX="5.25" PointY="4.9228011067708328" />
         </AssociationConnector>
+        <EntityTypeShape EntityType="Model.Request" Width="1.5" PointX="0.75" PointY="6.75" Height="3.1340950520833317" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

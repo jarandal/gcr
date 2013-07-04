@@ -76,5 +76,15 @@ Partial Public Class ModelContainer
     End Property
     Private _media As ObjectSet(Of Media)
 
+    Public ReadOnly Property Request() As ObjectSet(Of Request)
+        Get
+            If _request Is Nothing Then
+                _request = CreateObjectSet(Of Request)("Request")
+            End If
+            Return _request
+        End Get
+    End Property
+    Private _request As ObjectSet(Of Request)
+
 #End Region
 End Class

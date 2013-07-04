@@ -56,6 +56,9 @@
     <Reference Include="log4net">
       <HintPath>..\dll\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="MSCaptcha">
+      <HintPath>..\dll\MSCaptcha.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -104,6 +107,7 @@
     <Content Include="gcr\IndividualListUC.ascx" />
     <Content Include="gcr\IndividualPage.aspx" />
     <Content Include="gcr\IndividualUC.ascx" />
+    <Content Include="gcr\RequestPage.aspx" />
     <Content Include="gcr\SearchPage.aspx" />
     <Content Include="img\ajaxloadr.gif" />
     <Content Include="img\closedcircle.png" />
@@ -209,6 +213,13 @@
     <Compile Include="gcr\IndividualUC.ascx.vb">
       <DependentUpon>IndividualUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcr\RequestPage.aspx.designer.vb">
+      <DependentUpon>RequestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcr\RequestPage.aspx.vb">
+      <DependentUpon>RequestPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="gcr\SearchPage.aspx.designer.vb">
       <DependentUpon>SearchPage.aspx</DependentUpon>

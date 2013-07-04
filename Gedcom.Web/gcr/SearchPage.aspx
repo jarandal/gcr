@@ -48,10 +48,10 @@
          R E S U L T A D O S</h7>
     <uc1:IndividualListUC ID="ResultList" runat="server" />
     </asp:Panel>
-    <asp:Panel ID="pnlNotFound" runat="server" Visible="false">
+    <asp:Panel ID="pnlNotFound" runat="server" Visible="false" class="userMessage" EnableViewState="false" >
         No se encontraron registros.
     </asp:Panel>
-    <asp:Panel ID="pnlMaxReg" runat="server" Visible="false" class="style1" style="font-size:10px">
+    <asp:Panel ID="pnlMaxReg" runat="server" Visible="false" class="userMessage"  EnableViewState="false">
         Solo se despliegan los primeros <%=MaxReg()%> registros.
     </asp:Panel>
 </asp:Content>

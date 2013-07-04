@@ -62,6 +62,15 @@ Namespace My
                 Return CType(Me("WebSite"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public ReadOnly Property Debug() As Boolean
+            Get
+                Return CType(Me("Debug"),Boolean)
+            End Get
+        End Property
     End Class
 End Namespace
 

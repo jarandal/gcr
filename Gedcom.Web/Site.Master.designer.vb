@@ -23,6 +23,15 @@ Partial Public Class Site
     Protected WithEvents HeadContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
+    '''divTitle control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents divTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''HeadLoginView control.
     '''</summary>
     '''<remarks>
