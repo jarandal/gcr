@@ -95,7 +95,7 @@
                     <td style="vertical-align:top">
                         <uc1:IndividualUC ID="IndividualUC" runat="server" />
                         <a class='inline' href='#i_notes' title='Ver notas' runat="Server" 
-                            id="lnkNotes"><img src="../img/icon-notes.png" alt="Notas"/>Ver notas</a>
+                            id="lnkNotes"><img src="../img/icon-notes.png" alt="Notas"/>&nbsp;Ver notas</a>
                     </td>
                     <td style="width:360px">
 <asp:Panel ID="gallery" runat="server">
@@ -135,7 +135,7 @@
                     <asp:Panel ID="pnlFamilies" runat="server" Visible="false">
                         <h2 style="text-align:left;">Conyüge:<asp:DropDownList ID="ddlFamilies" runat="server" AutoPostBack="True"></asp:DropDownList></h2>
                         <uc1:IndividualUC ID="SpouseUC" runat="server" />
-                        <a class='inline' href='#i_family_notes' title='Ver notas familiares' runat="Server" id="lnkFamilyNotes"><img src="../img/icon-notes.png" alt="Notas"/>Ver notas familiares</a>
+                        <a class='inline' href='#i_family_notes' title='Ver notas familiares' runat="Server" id="lnkFamilyNotes"><img src="../img/icon-notes.png" alt="Notas"/>&nbsp;Ver notas familiares</a>
                     </asp:Panel>
                     <asp:Panel ID="pnlNoFamilies" runat="server" Visible="false">
                         Sin Familias.

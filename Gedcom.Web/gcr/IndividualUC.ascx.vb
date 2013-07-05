@@ -28,7 +28,7 @@ Public Class IndividualUC
     Private Sub Page_PreRender(sender As Object, e As System.EventArgs) Handles Me.PreRender
         If Not IsNothing(Individual) Then
             If IsNameVisible = False Then
-                hlnkNames.Visible = False
+                pnlName.Visible = False
             End If
             hlnkNames.Text = Individual.FirstName & " " & Individual.SurName
             hlnkNames.NavigateUrl = "IndividualPage.aspx?Id=" & Individual.Original_Id

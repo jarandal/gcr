@@ -23,6 +23,15 @@ Partial Public Class IndividualUC
     Protected WithEvents pnlIndividual As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
+    '''pnlName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlName As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''hlnkNames control.
     '''</summary>
     '''<remarks>
