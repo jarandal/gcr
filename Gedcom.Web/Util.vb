@@ -2,7 +2,14 @@
     Public Shared Function FormatDate(d As Date?) As String
         If Not IsNothing(d) Then
             If d.HasValue Then
-                Return d.Value.ToShortDateString()
+
+                If d.Value.DayOfYear = 1 Then
+                    Return d.Value.Year
+                Else
+                    Return d.Value.ToShortDateString()
+                End If
+
+
             End If
         End If
         Return ""

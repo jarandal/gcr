@@ -7,7 +7,6 @@
     <h7>
          B Ú S Q U E D A
     </h7>
-
  <h4>
     <table style="width:100%;">
         <tr>

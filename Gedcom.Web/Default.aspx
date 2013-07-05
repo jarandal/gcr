@@ -32,8 +32,8 @@
         El presente ensayo pretende, en una escala mayor, confirmar la realidad 
         contenida en el concepto de &quot;la gran familia chilena&quot;, tomando como columna 
         vertebral el linaje que se originó en Chile en el siglo XVI con el matrimonio de 
-        FRANCISCO RIQUELME DE LA BARRERA, español, con&nbsp; LEONOR ÁLVAREZ DE TOLEDO 
-        ALFARO.<br />
+        <a href="gcr/IndividualPage.aspx?ID=I1">FRANCISCO RIQUELME DE LA BARRERA</a>, español, con&nbsp; <a href="gcr/IndividualPage.aspx?ID=I2">LEONOR ÁLVAREZ DE TOLEDO 
+        ALFARO.</a><br />
         <br />
         En su descendencia se encontrará a Gobernadores del Reino de Chile, Directores 
         Supremos y Presidentes de la República, miembros de los poderes Legislativo y 
@@ -58,25 +58,31 @@
         <br />
         El autor no persigue fines de lucro y su propósito es contribuir con un modesto 
         aporte histórico-cultural al conocimiento de nuestra realidad social. Agradece 
-        la colaboración del genealogista José Urzúa Prieto y para hacer posible esta 
-        página WEB ha asociado al master web Javier Aranda Leiva.<br />
+        la colaboración del genealogista José Urzúa Prieto Y AL WEB MASTER.<br />
         <br />
         Juan Dalmati C.</h4>
-        <h7><br />
+        <h7>
+    <br />
+    <br />
         M E M O R Á N D U M<br />
-        <br />
         </h7>
         <h4>        
 IMÁGENES O NOTAS CON DERECHOS RESERVADOS, QUE EVENTUAL E INVOLUNTARIAMENTE, HAYAMOS PUBLICADO, POR FAVOR, DANOS EL PRIVILEGIO DE ELLO O REPORTA EL DESLÍZ, PARA SU EXCLUSIÓN Y TE ROGAMOS EXCUSARNOS POR LA FALTA DE PROLIGIDAD.<br />
-A TODAS NUESTRAS VISITAS:  <br />
-COLABORA CON FOTOS FECHAS Y DATOS, REPORTA ERRORES, ETC.<br />
-<br />
-SI NO ERES PARTE DE LA RED Y DESEAS INGRESAR GRATUITAMENTE, INDÍCANOS PARIENTE (S) EXISTENTE (S), HACER REFERENCIA A SUS NOMBRES Y LA SECUENCIA GENEALÓGICA HASTA TUS PROPIOS DATOS. (SI LOS INCLUÍMOS PASARÁS A SER PARTE DE LA  RED)<br />
-(DENTRO DEL PROGRAMA SE INDICA DONDE PINCHAR PARA USAR LAS OPCIONES OFRECIDAS)<br />
         </h4>
-     <h7><br />
+    <h4>        
+        AGRADECEMOS A TODAS NUESTRAS VISITAS
+COLABORAR CON FOTOS FECHAS Y DATOS, REPORTA ERRORES, ETC.</h4>
+    <h4>        
+SI NO ERES PARTE DE LA RED Y DESEAS INGRESAR GRATUITAMENTE, INDÍCANOS PARIENTE (S) EXISTENTE (S), HACER REFERENCIA A SUS NOMBRES Y LA SECUENCIA GENEALÓGICA HASTA TUS PROPIOS DATOS. (SI LOS INCLUÍMOS PASARÁS A SER PARTE DE LA  RED)<br />
+        </h4>
+    <h4>        
+        SELECCIONA LA OPCIÖN &quot;CONTACTO&quot; EN LA PARTE SUPERIOR DE ESTA PÁGINA PARA ACOJER 
+        LAS OPCIONES OFRECIDAS &nbsp;EN LOS ACÁPITES ANTERIORES<br />
+        </h4>
+     <h7>
+    <br />
+    <br />
         B Ú S Q U E D A<br />
-        <br />
     </h7>
     <h4>
     <table style="width:100%;">

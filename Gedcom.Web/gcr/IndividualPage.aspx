@@ -84,12 +84,15 @@
     <asp:Label ID="lblNames" runat="server" Text=""></asp:Label>
 </h2>
     <asp:Panel ID="pnlIndividual" runat="server">
+    <h7>
+        <%=FullName()%>
+    </h7>
     <table style="width: 100%;">
     <tr>
         <td>
             <table style="width: 100%;" >
                 <tr>
-                    <td>
+                    <td style="vertical-align:top">
                         <uc1:IndividualUC ID="IndividualUC" runat="server" />
                         <a class='inline' href='#i_notes' title='Ver notas' runat="Server" 
                             id="lnkNotes"><img src="../img/icon-notes.png" alt="Notas"/>Ver notas</a>

@@ -32,6 +32,15 @@ Partial Public Class IndividualUC
     Protected WithEvents hlnkNames As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
+    '''pnlBirth control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlBirth As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''lblBirth control.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,15 @@ Partial Public Class IndividualUC
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblBirth As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''pnlDeath control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlDeath As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''lblDeath control.

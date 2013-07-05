@@ -32,8 +32,8 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio"/>
                         <asp:MenuItem NavigateUrl="~/gcr/SearchPage.aspx" Text="Búsqueda"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
                         <asp:MenuItem NavigateUrl="~/gcr/RequestPage.aspx" Text="Contacto"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
                     </Items>
                 </asp:Menu>
             </div>

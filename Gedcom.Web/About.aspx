@@ -5,11 +5,11 @@
     <title>Genealogía Chilena en Red - Acerca de</title>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-         <br />
+    <h7>
          I N S T R U C C I O N E S:
          <br />
-    </h2>
+         <br />
+    </h7>
     <h4>
         Para facilitar la busqueda utilice el o los apellidos de la conyugüe o la 
         combinación de ambos esposos.</h4>

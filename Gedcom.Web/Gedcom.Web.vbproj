@@ -110,7 +110,9 @@
     <Content Include="gcr\RequestPage.aspx" />
     <Content Include="gcr\SearchPage.aspx" />
     <Content Include="img\ajaxloadr.gif" />
+    <Content Include="img\baby.png" />
     <Content Include="img\closedcircle.png" />
+    <Content Include="img\death.png" />
     <Content Include="img\graycircle.png" />
     <Content Include="img\i1.jpg" />
     <Content Include="img\i2.jpg" />

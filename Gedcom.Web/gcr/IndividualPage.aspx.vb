@@ -98,6 +98,7 @@ Public Class IndividualPage
                     XRefID = individual.Id
 
                     IndividualUC.Individual = individual
+                    IndividualUC.IsNameVisible = False
 
                     FullName = individual.FullName
 
