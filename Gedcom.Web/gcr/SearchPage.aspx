@@ -23,22 +23,23 @@
             <td class="style1">
                 Ingrese los nombres y/o apellidos de la persona que busca:</td>
             <td class="style1">
-                <asp:TextBox ID="txtFirstName" runat="server" Width="200px"></asp:TextBox></td>
+                <asp:TextBox ID="txtFirstName" runat="server" Width="220px"></asp:TextBox></td>
             <td class="style1">
-                <asp:TextBox ID="txtSurName" runat="server" Width="200px"></asp:TextBox></td>
+                <asp:TextBox ID="txtSurName" runat="server" Width="220px"></asp:TextBox></td>
             <td class="style1">
                 <asp:Button ID="btnSearch" runat="server" Text="Buscar" /></td>
         </tr>
-        <tr>
+        <tr id="trSearchTips"  runat="server">
             <td class="style1">
                 &nbsp;</td>
-            <td class="style1">
-                &nbsp;</td>
-            <td class="style1" style="font-size:10px" >
+            <td class="style1" style="font-size:10px; width=200;" >
+                Puede utilizar el o los apellidos de la conyugüe o la combinación de ambos.</td>
+            <td class="style1"  style="font-size:10px; width=200px" >
                 EJEMPLO: MAZA, de la, BARRERA, de la; CASTRO, de; PINO, del</td>
             <td class="style1">
                 &nbsp;</td>
         </tr>
+
     </table>
     </h4>
 

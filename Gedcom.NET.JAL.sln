@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadClient", "FileUpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightFileUpload", "FileUpload\SilverlightFileUpload\SilverlightFileUpload.csproj", "{86B590BE-E14A-4252-BFF0-7148D45F99DF}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Gedcom.Import.Setup", "Installer\Installer.vdproj", "{C621D1C2-B474-412F-AD50-F4BBD3809D0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug - VS|Any CPU = Debug - VS|Any CPU
@@ -266,6 +268,18 @@ Global
 		{86B590BE-E14A-4252-BFF0-7148D45F99DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{86B590BE-E14A-4252-BFF0-7148D45F99DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{86B590BE-E14A-4252-BFF0-7148D45F99DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug - VS|Any CPU.ActiveCfg = Debug
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug - VS|Mixed Platforms.ActiveCfg = Debug
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug - VS|x86.ActiveCfg = Debug
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug|Any CPU.ActiveCfg = Debug
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug|x86.ActiveCfg = Debug
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release - VS|Any CPU.ActiveCfg = Release
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release - VS|Mixed Platforms.ActiveCfg = Release
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release - VS|x86.ActiveCfg = Release
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release|Any CPU.ActiveCfg = Release
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release|Mixed Platforms.ActiveCfg = Release
+		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

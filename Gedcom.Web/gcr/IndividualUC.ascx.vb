@@ -33,12 +33,12 @@ Public Class IndividualUC
             hlnkNames.Text = Individual.FirstName & " " & Individual.SurName
             hlnkNames.NavigateUrl = "IndividualPage.aspx?Id=" & Individual.Original_Id
 
-            If Individual.BirthDate.HasValue Then
+            If Individual.BirthDate.HasValue OrElse Not String.IsNullOrWhiteSpace(Individual.BirthPlace) Then
                 lblBirth.Text = Util.FormatDate(Individual.BirthDate) & " " & Individual.BirthPlace
             Else
                 pnlBirth.Visible = False
             End If
-            If Individual.DeathDate.HasValue Then
+            If Individual.DeathDate.HasValue OrElse Not String.IsNullOrWhiteSpace(Individual.DeathPlace) Then
                 lblDeath.Text = Util.FormatDate(Individual.DeathDate) & " " & Individual.DeathPlace
             Else
                 pnlDeath.Visible = False

@@ -78,6 +78,15 @@
         });
     </script>
 
+    <style type="text/css">
+    .notes
+    {
+        font-size: 1.2em;
+        font-family:  Arial; 
+        font-weight: bolder;
+    }
+    </style>
+
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2 style="text-align:left;">
@@ -162,10 +171,10 @@
 </asp:Panel>
 <div style='display:none'>
     <div id='i_notes' style='padding:10px; background:#fff;'>
-        <asp:TextBox ID="txtNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" ></asp:TextBox>
+        <asp:TextBox ID="txtNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" CssClass="notes" ></asp:TextBox>
 	</div>
     <div id='i_family_notes' style='padding:10px; background:#fff;'>
-        <asp:TextBox ID="txtFamilyNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" ></asp:TextBox>
+        <asp:TextBox ID="txtFamilyNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" CssClass="notes" ></asp:TextBox>
 	</div>
 </div>
 </asp:Content>

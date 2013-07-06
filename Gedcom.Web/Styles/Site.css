@@ -5,7 +5,7 @@ body
 {
     background: #b6b7bc;
     font-size: .80em;
-    font-family:  Arial; /* , Helvetica, Verdana, sans-serif;*/
+    font-family:  Arial; 
     margin: 0px;
     padding: 0px;
     color: #696969;
@@ -339,3 +339,10 @@ div.accountInfo
 {
     vertical-align:middle;
 }
+
+    .notes
+    {
+        font-size: 1.2em;
+        font-family:  Arial; 
+        font-weight: bolder;
+    }

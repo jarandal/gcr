@@ -11,6 +11,7 @@ Public Class SearchPage
             If Not String.IsNullOrWhiteSpace(txtFirstName.Text) OrElse Not String.IsNullOrWhiteSpace(txtSurName.Text) Then
                 Search()
             End If
+
         End If
     End Sub
 
@@ -35,11 +36,12 @@ Public Class SearchPage
             ResultList.Individuals = r
             pnlResults.Visible = True
             pnlNotFound.Visible = False
-
+            trSearchTips.Visible = False
             If r.Count = MaxReg Then
                 pnlMaxReg.Visible = True
             End If
         Else
+            trSearchTips.Visible = True
             pnlResults.Visible = False
             pnlNotFound.Visible = True
         End If
