@@ -260,16 +260,18 @@ Public Class BLImport
 
         For i = start_index To end_index
             Dim ind As Gedcom.GedcomIndividualRecord = gcd.Individuals(i)
-            Dim ind1 = insertIndividual(ctx, ind)
-            If Not IsNothing(writer) Then writer.WriteLine(ind1.getInsertSql)
-            individualsProcesed = individualsProcesed + 1
-            If (i Mod 100) = 0 Then
-                If Not IsNothing(ctx) Then ctx.SaveChanges()
-                'Progress = 50 + CInt(individualsProcesed / individualsTotal * 100)
-                Progress = CInt((individualsProcesed + familiesProcesed) / (individualsTotal + familiesTotal) * 100)
-                RaiseEvent ImportPercentageDone(Me, New ImportPercentageDoneEventArgs(Progress))
-                If Not IsNothing(ctx) Then ctx.Dispose()
-                If Not IsNothing(ctx) Then ctx = getCtx(connectionstring)
+            If IsNothing(ind.UserReferenceNumber) OrElse Not ind.UserReferenceNumber.ToUpper.StartsWith("X") Then
+                Dim ind1 = insertIndividual(ctx, ind)
+                If Not IsNothing(writer) Then writer.WriteLine(ind1.getInsertSql)
+                individualsProcesed = individualsProcesed + 1
+                If (i Mod 100) = 0 Then
+                    If Not IsNothing(ctx) Then ctx.SaveChanges()
+                    'Progress = 50 + CInt(individualsProcesed / individualsTotal * 100)
+                    Progress = CInt((individualsProcesed + familiesProcesed) / (individualsTotal + familiesTotal) * 100)
+                    RaiseEvent ImportPercentageDone(Me, New ImportPercentageDoneEventArgs(Progress))
+                    If Not IsNothing(ctx) Then ctx.Dispose()
+                    If Not IsNothing(ctx) Then ctx = getCtx(connectionstring)
+                End If
             End If
         Next
 
@@ -339,6 +341,12 @@ Public Class BLImport
         ind.Sex = individual.SexChar
         ind.Notes = getNotes(individual.Database, individual.Notes)
         ind.NotesSummary = ind.Notes
+
+        If Not IsNothing(individual.UserReferenceNumber) AndAlso individual.UserReferenceNumber.ToUpper.StartsWith("D") Then
+            ind.Distinguished = True
+        Else
+            ind.Distinguished = False
+        End If
 
         If Not IsNothing(individual.Death) Then
             If Not IsNothing(individual.Death.Date) Then ind.DeathDate = individual.Death.Date.DateTime1

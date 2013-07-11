@@ -2,9 +2,12 @@
 Imports System.Data.EntityClient
 Imports System.Data.SqlClient
 Imports System.Text
+Imports log4net
 
 Public Class GcrContext
     Inherits ModelContainer
+
+    Private Shared ReadOnly log As ILog = LogManager.GetLogger(GetType(Process))
 
     Public Sub New()
         MyBase.New()
@@ -53,6 +56,14 @@ Public Class GcrContext
             If Not IsNothing(s) Then s.Close()
         End Try
         Return sql
+    End Function
+
+    Public Shared Function getTempDatabaseScript()
+        Return getScript("Gedcom.Model.Model.Temp.sql")
+    End Function
+
+    Public Shared Function getRenameDatabaseScript()
+        Return getScript("Gedcom.Model.Model.Rename.sql")
     End Function
 
     Public Shared Function getDatabaseScript()
@@ -179,20 +190,22 @@ Public Class GcrContext
 
                 command = connection.CreateCommand()
 
-                command.CommandText = getDatabaseScript()
+                command.CommandText = "USE [" + databaseName + "]"
                 command.ExecuteNonQuery()
 
-                command.CommandText = "USE [" + databaseName + "]"
+                command.CommandText = getTempDatabaseScript()
                 command.ExecuteNonQuery()
 
 
                 Dim objReader As System.IO.StreamReader = Nothing
+                Dim line As Long = 0
                 Try
                     objReader = New System.IO.StreamReader(filename)
                     Dim commandText As String = ""
                     Do While objReader.Peek() <> -1
                         Try
                             Dim aux As String = objReader.ReadLine()
+                            line = line + 1
                             If aux.Trim = "GO" Then
                                 command.CommandText = commandText
                                 command.ExecuteNonQuery()
@@ -211,13 +224,18 @@ Public Class GcrContext
                             End If
 
                         Catch ex As Exception
-                            Debug.Write(ex.Message & " " & commandText)
+                            log.ErrorFormat("Error al ejecutar la instruccion línea {0} '{1}'", line, commandText)
+                            log.ErrorFormat("Mensaje de error '{0}'", ex.Message)
+                            log.ErrorFormat("Detalle del error '{0}'", ex.ToString)
                             commandText = ""
                         End Try
                     Loop
                 Finally
                     If Not IsNothing(objReader) Then objReader.Close()
                 End Try
+
+                command.CommandText = getRenameDatabaseScript()
+                command.ExecuteNonQuery()
 
                 command.CommandText = getIndexScript()
                 command.ExecuteNonQuery()

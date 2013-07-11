@@ -26,7 +26,7 @@
         Dim d1 As String = "NULL"
         If (Me.Date.HasValue) Then d1 = "'" & Me.Date.Value.ToString("s") & "'"
 
-        Return "INSERT [dbo].[Families] (" & _
+        Return "INSERT [dbo].[Families_temp] (" & _
             "[Id], " & _
             "[Notes], " & _
             "[NotesSummary], " & _

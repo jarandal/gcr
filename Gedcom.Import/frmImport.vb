@@ -150,6 +150,7 @@ Public Class frmImport
             File.Delete(zipfile)
             Process_Import(ShortFileName)
 
+
             ''Dim ShortFileName As String = Process_Upload(TST_ZIPFILENAME)
             ''Process_Import(ShortFileName)
 
@@ -179,6 +180,8 @@ Public Class frmImport
             lblInfo.Text = "Cancelado!"
         ElseIf e.Error IsNot Nothing Then
             lblInfo.Text = "Error: " & e.Error.Message
+            log.ErrorFormat("Error al importar {0}", e.Error.Message)
+            log.ErrorFormat("Detalle del error {0}", e.Error.ToString)
         Else
             lblInfo.Text = "Listo!"
         End If

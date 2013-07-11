@@ -93,9 +93,12 @@
     <asp:Label ID="lblNames" runat="server" Text=""></asp:Label>
 </h2>
     <asp:Panel ID="pnlIndividual" runat="server">
-    <h7>
-        <%=FullName()%>
-    </h7>
+    <table>
+    <tr>
+    <td style="width:50%"><h7><%=FullName()%></h7></td>
+    <td style="width:50%"><div style="height:1px" class="fb-like" data-href="http://www.genealogiachilenaenred.cl/gcr/IndividualPage.aspx?ID=<%=Original_ID()%>" data-send="true" data-show-faces="false" data-font="arial"></div></td>
+    </tr>
+    </table>
     <table style="width: 100%;">
     <tr>
         <td>
@@ -177,5 +180,7 @@
         <asp:TextBox ID="txtFamilyNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" CssClass="notes" ></asp:TextBox>
 	</div>
 </div>
+<br />
+<div class="fb-comments" data-href="http://www.genealogiachilenaenred.cl/gcr/IndividualPage.aspx?ID=<%=Original_Id()%>" data-width="600" data-num-posts="10"></div>
 </asp:Content>
 

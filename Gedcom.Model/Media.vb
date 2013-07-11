@@ -5,7 +5,7 @@
         Dim i1 As String = "NULL"
         If (Me.SortOrder.HasValue) Then i1 = CInt(Me.SortOrder.Value)
 
-        Return "INSERT [dbo].[Media] (" & _
+        Return "INSERT [dbo].[Media_temp] (" & _
             "[Filename], " & _
             "[Title], " & _
             "[Notes], " & _

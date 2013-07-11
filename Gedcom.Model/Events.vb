@@ -5,7 +5,7 @@
         Dim d1 As String = "NULL"
         If (Me.Date.HasValue) Then d1 = "'" & Me.Date.Value.ToString("s") & "'"
 
-        Return "INSERT [dbo].[Events] (" & _
+        Return "INSERT [dbo].[Events_temp] (" & _
             "[Type], " & _
             "[Date], " & _
             "[Notes], " & _

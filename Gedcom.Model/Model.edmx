@@ -63,6 +63,7 @@
           <Property Name="DeathDate" Type="datetime2" />
           <Property Name="DeathPlace" Type="nvarchar" MaxLength="200" />
           <Property Name="Dead" Type="bit" />
+          <Property Name="Distinguished" Type="bit" />
         </EntityType>
         <EntityType Name="Media">
           <Key>
@@ -194,6 +195,7 @@
           <NavigationProperty Name="Family" Relationship="Model.FK_Childrens" FromRole="Individuals" ToRole="Families" />
           <NavigationProperty Name="Media" Relationship="Model.FK_Media_Individuals" FromRole="Individual" ToRole="Media" />
           <Property Type="String" Name="Original_Id" Nullable="false" />
+          <Property Type="Boolean" Name="Distinguished" />
         </EntityType>
         <Association Name="FK_IndividualEvent">
           <End Type="Model.Individual" Role="Individuals" Multiplicity="1" />
@@ -292,6 +294,7 @@
           <EntitySetMapping Name="Individuals">
             <EntityTypeMapping TypeName="Model.Individual">
               <MappingFragment StoreEntitySet="Individuals">
+                <ScalarProperty Name="Distinguished" ColumnName="Distinguished" />
                 <ScalarProperty Name="Original_Id" ColumnName="Original_Id" />
                 <ScalarProperty Name="Dead" ColumnName="Dead" />
                 <ScalarProperty Name="DeathPlace" ColumnName="DeathPlace" />

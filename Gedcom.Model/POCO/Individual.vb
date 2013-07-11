@@ -217,6 +217,20 @@ Public Overridable Property Original_Id As String
             End If
 		End Set
 	End Property
+	Private _distinguished As Nullable(Of Boolean)
+
+	<System.Runtime.Serialization.DataMemberAttribute()> _
+Public Overridable Property Distinguished As Nullable(Of Boolean)
+        Get
+            Return _distinguished
+        End Get
+        Set(ByVal value As Nullable(Of Boolean))
+			If (Object.ReferenceEquals(Me._distinguished, value) <> True) Then
+				_distinguished = value
+				Me.RaisePropertyChanged("Distinguished")
+            End If
+		End Set
+	End Property
 
     #End Region
     #Region "Navigation Properties"

@@ -19,7 +19,10 @@
         Dim i1 As String = "NULL"
         If (Me.Dead.HasValue) Then i1 = IIf(Me.Dead.Value, "1", "0")
 
-        sb.Append("INSERT [dbo].[Individuals] (" & _
+        Dim i2 As String = "NULL"
+        If (Me.Distinguished.HasValue) Then i2 = IIf(Me.Distinguished.Value, "1", "0")
+
+        sb.Append("INSERT [dbo].[Individuals_temp] (" & _
         "[Id], " & _
         "[FirstName], " & _
         "[SurName], " & _
@@ -32,6 +35,7 @@
         "[DeathDate], " & _
         "[DeathPlace], " & _
         "[Dead], " & _
+        "[Distinguished], " & _
         "[Original_Id]" & _
         ") VALUES (" & _
         "N'" & Me.Id & "', " & _
@@ -46,6 +50,7 @@
         d2 & ", " & _
         "N'" & Util.escape(DeathPlace) & "', " & _
         i1 & ", " & _
+        i2 & ", " & _
         "N'" & Me.Original_Id & "'" & _
         ")" & vbCrLf & "GO" & vbCrLf)
 

@@ -5,8 +5,12 @@
     <title>Genealogía Chilena en Red</title>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h7>
-        I N T R O D U C C I Ó N</h7>
+    <table>
+    <tr>
+    <td style="width:50%"><h7>I N T R O D U C C I Ó N</h7></td>
+    <td style="width:50%"><div style="height:1px" class="fb-like" data-href="http://www.genealogiachilenaenred.cl" data-send="true" data-show-faces="false" data-font="arial"></div></td>
+    </tr>
+    </table>
     <p>
         &nbsp;</p>
     <h3  >

@@ -1,4 +1,6 @@
-﻿Imports System.Web.SessionState
+﻿Imports System.Reflection
+Imports System.Diagnostics
+Imports System.Web.SessionState
 Imports log4net
 
 Public Class Global_asax
@@ -41,6 +43,29 @@ Public Class Global_asax
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
         ' Fires when the application ends
         log.Info("GCR detenido")
+
+        Dim runtime As HttpRuntime = GetType(System.Web.HttpRuntime).InvokeMember("_theRuntime", _
+               BindingFlags.NonPublic Or BindingFlags.Static Or BindingFlags.GetField, _
+               Nothing, Nothing, Nothing)
+
+        If Not IsNothing(runtime) Then
+            Dim shutDownMessage As String = runtime.GetType().InvokeMember("_shutDownMessage",
+                        BindingFlags.NonPublic Or BindingFlags.Instance Or BindingFlags.GetField, _
+                        Nothing, _
+                        runtime, _
+                        Nothing)
+
+            Dim shutDownStack As String = runtime.GetType().InvokeMember("_shutDownStack", _
+                BindingFlags.NonPublic Or BindingFlags.Instance Or BindingFlags.GetField, _
+                Nothing, _
+                runtime, _
+                Nothing)
+
+            log.InfoFormat("Motivo {0}", shutDownMessage)
+            log.InfoFormat("Pila {0}", shutDownStack)
+
+        End If
+
     End Sub
 
 End Class
