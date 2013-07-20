@@ -75,6 +75,7 @@
             //Examples of how to assign the Colorbox event to elements
             $(".gallery1").colorbox({ rel: 'gallery1', transition: "none", width: "75%", height: "75%" });
             $(".inline").colorbox({ inline: true, width: "75%" });
+            $(".openpage").colorbox({ width: "75%" });
         });
     </script>
 
@@ -106,7 +107,7 @@
                 <tr>
                     <td style="vertical-align:top">
                         <uc1:IndividualUC ID="IndividualUC" runat="server" />
-                        <a class='inline' href='#i_notes' title='Ver notas' runat="Server" 
+                            <a class="openpage" title="Ver notas" runat="Server" 
                             id="lnkNotes"><img src="../img/icon-notes.png" alt="Notas"/>&nbsp;Ver notas</a>
                     </td>
                     <td style="width:360px">
@@ -147,7 +148,7 @@
                     <asp:Panel ID="pnlFamilies" runat="server" Visible="false">
                         <h2 style="text-align:left;">Conyüge:<asp:DropDownList ID="ddlFamilies" runat="server" AutoPostBack="True"></asp:DropDownList></h2>
                         <uc1:IndividualUC ID="SpouseUC" runat="server" />
-                        <a class='inline' href='#i_family_notes' title='Ver notas familiares' runat="Server" id="lnkFamilyNotes"><img src="../img/icon-notes.png" alt="Notas"/>&nbsp;Ver notas familiares</a>
+                        <a class='openpage' title='Ver notas familiares' runat="Server" id="lnkFamilyNotes"><img src="../img/icon-notes.png" alt="Notas"/>&nbsp;Ver notas familiares</a>
                     </asp:Panel>
                     <asp:Panel ID="pnlNoFamilies" runat="server" Visible="false">
                         Sin Familias.
@@ -172,14 +173,6 @@
     </tr>
 </table>
 </asp:Panel>
-<div style='display:none'>
-    <div id='i_notes' style='padding:10px; background:#fff;'>
-        <asp:TextBox ID="txtNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" CssClass="notes" ></asp:TextBox>
-	</div>
-    <div id='i_family_notes' style='padding:10px; background:#fff;'>
-        <asp:TextBox ID="txtFamilyNotes" runat="server" Wrap="true" Rows="0" ReadOnly="true"  TextMode="MultiLine" BorderStyle="None" BorderWidth="0px" style="width: 100%; height:400px" CssClass="notes" ></asp:TextBox>
-	</div>
-</div>
 <br />
 <div class="fb-comments" data-href="http://www.genealogiachilenaenred.cl/gcr/IndividualPage.aspx?ID=<%=Original_Id()%>" data-width="600" data-num-posts="10"></div>
 </asp:Content>

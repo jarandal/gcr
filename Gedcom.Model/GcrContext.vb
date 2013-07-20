@@ -179,6 +179,7 @@ Public Class GcrContext
         Dim connection As SqlConnection = Nothing
         Dim command As SqlCommand = Nothing
 
+        log.Info("---=== INICIO del proceso de archivo de datos ===---")
 
         Try
             If System.IO.File.Exists(filename) = True Then
@@ -219,6 +220,7 @@ Public Class GcrContext
                                 If progress <> new_progress And progress < 100 Then
                                     '\\ nunca graba el 100
                                     progress = new_progress
+                                    log.InfoFormat("Procesando archivo de datos {0}%", progress)
                                     System.IO.File.WriteAllText(processingFile, progress)
                                 End If
                             End If
@@ -245,10 +247,15 @@ Public Class GcrContext
 
             End If
 
+        Catch ex As Exception
+            log.ErrorFormat("Error al importar archivo de datos")
+            log.ErrorFormat("Mensaje de error '{0}'", ex.Message)
+            log.ErrorFormat("Detalle del error '{0}'", ex.ToString)
         Finally
             If Not IsNothing(command) Then command.Dispose()
             If Not IsNothing(connection) Then connection.Close()
             If System.IO.File.Exists(filename) Then System.IO.File.Delete(filename)
+            log.Info("---=== FIN del proceso de archivo de datos ===---")
         End Try
 
 

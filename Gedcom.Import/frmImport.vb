@@ -474,19 +474,24 @@ Public Class frmImport
 
             System.Threading.Thread.Sleep(2000)
             Application.DoEvents()
-            Dim ub2 As UriBuilder = New UriBuilder(My.Settings.WebSite.TrimEnd("/c") & "/Process.ashx")
-            ub2.Query = "GetProgress=True"
-            Dim wc2 As New WebClient
-            Dim aux As String = wc2.DownloadString(ub2.Uri)
-            If IsNumeric(aux) Then
-                RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Procesando archivo en el servidor", CInt(aux)))
-                If CInt(aux) = 100 Then
-                    Exit While
+
+            Try
+                Dim ub2 As UriBuilder = New UriBuilder(My.Settings.WebSite.TrimEnd("/c") & "/Process.ashx")
+                ub2.Query = "GetProgress=True"
+                Dim wc2 As New WebClient
+                Dim aux As String = wc2.DownloadString(ub2.Uri)
+                If IsNumeric(aux) Then
+                    RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Procesando archivo en el servidor", CInt(aux)))
+                    If CInt(aux) = 100 Then
+                        Exit While
+                    End If
+                Else
+                    RaiseEvent ProcessProgress(Me, New ProcessEventArgs("MSGBOX Error al recuperar el progreso '" & aux & "'", 0))
                 End If
-            Else
-                RaiseEvent ProcessProgress(Me, New ProcessEventArgs("MSGBOX Error al recuperar el progreso '" & aux & "'", 0))
-            End If
-            wc2.Dispose()
+                wc2.Dispose()
+            Catch ex As Exception
+                log.ErrorFormat("Error ignorado al consultar el progreso {0} - {1}", ex.Message, ex.ToString)
+            End Try
         End While
 
         wc.Dispose()

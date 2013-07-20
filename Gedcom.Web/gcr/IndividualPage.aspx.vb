@@ -185,7 +185,7 @@ Public Class IndividualPage
                     If individual.Notes.Replace(vbCrLf, "").Trim.Length = 0 Then
                         lnkNotes.Visible = False
                     Else
-                        Me.txtNotes.Text = individual.Notes
+                        lnkNotes.HRef = "NotesPage.aspx?ID=" & Original_ID & "&KIND=IND"
                     End If
 
                 End If
@@ -225,7 +225,7 @@ Public Class IndividualPage
                     lnkFamilyNotes.Visible = False
                 Else
                     lnkFamilyNotes.Visible = True
-                    Me.txtFamilyNotes.Text = family.Notes
+                    lnkFamilyNotes.HRef = "NotesPage.aspx?ID=" & family.Id & "&KIND=FAM"
                 End If
 
 
@@ -237,4 +237,5 @@ Public Class IndividualPage
     Protected Sub ddlFamilies_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlFamilies.SelectedIndexChanged
         RefreshChildrens()
     End Sub
+
 End Class

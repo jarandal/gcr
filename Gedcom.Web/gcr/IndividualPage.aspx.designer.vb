@@ -165,22 +165,4 @@ Partial Public Class IndividualPage
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlNoChildrens As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''txtNotes control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtNotes As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''txtFamilyNotes control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtFamilyNotes As Global.System.Web.UI.WebControls.TextBox
 End Class
