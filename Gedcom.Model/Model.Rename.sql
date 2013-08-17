@@ -1,10 +1,10 @@
-IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Families_temp]') AND TYPE IN (N'U'))
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PK_Families_temp]') AND TYPE IN (N'PK'))
 ALTER TABLE [dbo].[Families_temp] DROP CONSTRAINT [PK_Families_temp];
-IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Individuals_temp]') AND TYPE IN (N'U'))
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PK_Individuals_temp]') AND TYPE IN (N'PK'))
 ALTER TABLE [dbo].[Individuals_temp] DROP CONSTRAINT [PK_Individuals_temp];
-IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Events_temp]') AND TYPE IN (N'U'))
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PK_Events_temp]') AND TYPE IN (N'PK'))
 ALTER TABLE [dbo].[Events_temp] DROP CONSTRAINT [PK_Events_temp];
-IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Media_temp]') AND TYPE IN (N'U'))
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PK_Media_temp]') AND TYPE IN (N'PK'))
 ALTER TABLE [dbo].[Media_temp] DROP CONSTRAINT [PK_Media_temp];
 
 /****** Object:  ForeignKey [FK_IndividualEvent]    Script Date: 06/15/2013 11:34:59 ******/

@@ -538,7 +538,6 @@ Public Class frmImport
     Public Function Process_ExportSql(gedcomfile As String) As String
         Dim blimport As Gedcom.BL.BLImport
         blimport = New Gedcom.BL.BLImport
-        Dim connectionstring As String = blimport.CreateSqlExpressDatabase()
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Leyendo archivo de individuos", 0))
         AddHandler blimport.ReadGedComPercentageDone, AddressOf BLImport_GedComReaderProcessProgress
         AddHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
