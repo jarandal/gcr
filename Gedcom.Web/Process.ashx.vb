@@ -19,6 +19,11 @@ Public Class Process
                 getProgress = Boolean.Parse(context.Request.QueryString("GetProgress"))
             End If
 
+            Dim processSQL As Boolean = True
+            If Not String.IsNullOrEmpty(context.Request.QueryString("processSQL")) Then
+                processSQL = Boolean.Parse(context.Request.QueryString("processSQL"))
+            End If
+
             Dim uploadPath As String = context.Server.MapPath("~/Upload").TrimEnd("\"c)
             Dim processingFile As String = uploadPath & "\Processing.txt"
 
@@ -42,9 +47,12 @@ Public Class Process
                         System.IO.File.WriteAllText(processingFile, "0")
                         Try
                             Zip.ExtractZipFile(zipfilename, gcrPath)
-                            Dim sqlfile As String = FindSql(filename, gcrPath)
-                            Dim b As New Gedcom.BL.BLImport
-                            Gedcom.Model.GcrContext.RestoreServerDatabase(sqlfile, processingFile)
+
+                            If processSQL Then
+                                Dim sqlfile As String = FindSql(filename, gcrPath)
+                                Dim b As New Gedcom.BL.BLImport
+                                Gedcom.Model.GcrContext.RestoreServerDatabase(sqlfile, processingFile)
+                            End If
 
                             Dim sitemapindexfile As String = Gedcom.BL.BLIndividuals.GenerateSiteMapIndex(uploadPath, My.Settings.WebSite)
 

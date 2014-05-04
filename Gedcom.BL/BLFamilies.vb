@@ -25,12 +25,12 @@ Public Class BLFamilies
         Return GetByIndividualId(ctx, Id, so)
     End Function
 
-    Public Shared Sub LoadParentNames(Families As List(Of Family))
+    Public Shared Sub LoadParentNames(Families As List(Of Family), Optional so As SearchOptions = Nothing)
         Dim ctx As New Gedcom.Model.GcrContext
         For Each f In Families
             Dim auxF As Family = f
-            f.HusbandName = (From ind In ctx.Individuals Where ind.Id = auxF.Husband_Id Select (ind.FirstName & " " & ind.SurName)).FirstOrDefault
-            f.WifeName = (From ind In ctx.Individuals Where ind.Id = auxF.Wife_Id Select (ind.FirstName & " " & ind.SurName)).FirstOrDefault
+            f.HusbandName = (From ind In ctx.CurrentIndividuals(so) Where ind.Id = auxF.Husband_Id Select (ind.FirstName & " " & ind.SurName)).FirstOrDefault
+            f.WifeName = (From ind In ctx.CurrentIndividuals(so) Where ind.Id = auxF.Wife_Id Select (ind.FirstName & " " & ind.SurName)).FirstOrDefault
         Next
     End Sub
 

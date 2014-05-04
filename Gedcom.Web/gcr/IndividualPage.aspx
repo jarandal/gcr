@@ -2,7 +2,7 @@
 <%@ Register src="IndividualUC.ascx" tagname="IndividualUC" tagprefix="uc1" %>
 <%@ Register src="IndividualListUC.ascx" tagname="IndividualListUC" tagprefix="uc2" %>
 <asp:Content ID="HeadContent" runat="server" ContentPlaceHolderID="HeadContent">
-    <title>Genealogía Chilena en Red - <%=FullName()%></title>
+    <title><%=FullName()%> - Genealogía Chilena en Red</title>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     <script type="text/javascript" src="../Scripts/stepcarousel.js">
@@ -96,7 +96,10 @@
     <asp:Panel ID="pnlIndividual" runat="server">
     <table>
     <tr>
-    <td style="width:50%"><h7><%=FullName()%></h7></td>
+    <td style="width:50%"><h7><%=FullName()%></h7><asp:Panel ID="pnlAdmin" runat="server" Visible = "false">
+    <asp:Button ID="btnDelete" runat="server" Text="Eliminar" />
+    <asp:Button ID="btnRestore" runat="server" Text="Restaurar" />
+</asp:Panel></td>
     <td style="width:50%"><div style="height:1px" class="fb-like" data-href="http://www.genealogiachilenaenred.cl/gcr/IndividualPage.aspx?ID=<%=Original_ID()%>" data-send="true" data-show-faces="false" data-font="arial"></div></td>
     </tr>
     </table>

@@ -172,7 +172,45 @@ Public Class GcrContext
     '    End Try
     'End Sub
 
+    Public Shared Function CreateTempTables() As String
 
+        Dim databaseName As String = "gcr_db"
+        Dim connection As SqlConnection = Nothing
+        Dim command As SqlCommand = Nothing
+
+        log.Info("---=== INICIO del proceso de creacion de tablas temporales ===---")
+
+        Try
+
+            Dim progress As Integer = 0
+
+            connection = New SqlConnection(getServerConnectionString)
+            connection.Open()
+
+            command = connection.CreateCommand()
+
+            command.CommandText = "USE [" + databaseName + "]"
+            command.ExecuteNonQuery()
+
+            command.CommandText = getTempDatabaseScript()
+            command.ExecuteNonQuery()
+
+            Dim c As String
+            c = "metadata=res://*/Model_temp.csdl|res://*/Model_temp.ssdl|res://*/Model_temp.msl;provider=System.Data.SqlClient;provider connection string=""" & getServerConnectionString() & """"
+            Return c
+
+        Catch ex As Exception
+            log.ErrorFormat("Error al crear tablas temporales")
+            log.ErrorFormat("Mensaje de error '{0}'", ex.Message)
+            log.ErrorFormat("Detalle del error '{0}'", ex.ToString)
+            Throw
+        Finally
+            If Not IsNothing(command) Then command.Dispose()
+            If Not IsNothing(connection) Then connection.Close()
+            log.Info("---=== FIN del proceso de creacion de tablas temporales ===---")
+        End Try
+
+    End Function
     Public Shared Sub RestoreServerDatabase(filename As String, processingFile As String)
 
         Dim databaseName As String = "gcr_db"
@@ -261,6 +299,44 @@ Public Class GcrContext
 
     End Sub
 
+    Public Shared Sub RenameTempTables()
+
+        Dim databaseName As String = "gcr_db"
+        Dim connection As SqlConnection = Nothing
+        Dim command As SqlCommand = Nothing
+
+        log.Info("---=== INICIO del renombrado de tablas ===---")
+
+        Try
+            connection = New SqlConnection(getServerConnectionString)
+            connection.Open()
+
+            command = connection.CreateCommand()
+
+            command.CommandText = "USE [" + databaseName + "]"
+            command.ExecuteNonQuery()
+
+            command.CommandText = getRenameDatabaseScript()
+            command.ExecuteNonQuery()
+
+            command.CommandText = getIndexScript()
+            command.ExecuteNonQuery()
+
+            command.CommandText = "if exists(select * from sys.databases where name = '" & databaseName & "') DBCC SHRINKDATABASE ('" & databaseName & "' , 0);"
+            command.ExecuteNonQuery()
+        Catch ex As Exception
+            log.ErrorFormat("Error al importar archivo de datos")
+            log.ErrorFormat("Mensaje de error '{0}'", ex.Message)
+            log.ErrorFormat("Detalle del error '{0}'", ex.ToString)
+        Finally
+            If Not IsNothing(command) Then command.Dispose()
+            If Not IsNothing(connection) Then connection.Close()
+            log.Info("---=== FIN del del renombrado de tablas ===---")
+        End Try
+
+
+    End Sub
+
     Public Overrides Function SaveChanges(options As System.Data.Objects.SaveOptions) As Integer
         'Dim retry As Boolean = False
         'Try
@@ -285,6 +361,26 @@ Public Class GcrContext
         '    End If
 
         'End Try
+
+    End Function
+
+    Public Function CurrentIndividuals(Optional so As SearchOptions = Nothing) As ObjectQuery(Of Individual)
+        Dim isAdmin As Boolean = False
+        If Not IsNothing(so) Then
+            If so.IsAdmin = True Then
+                isAdmin = True
+            End If
+        End If
+
+        If isAdmin Then
+            Dim q1 As ObjectQuery(Of Individual) = (From ind In Me.Individuals)
+            Return q1
+        Else
+            Dim q1 As ObjectQuery(Of Individual) = (From ind In Me.Individuals)
+            Dim qe As ObjectQuery(Of String) = (From opt In Me.IndividualOptions Where opt.Type = "deleted" Select opt.Original_Id)
+            q1 = q1.Where(Function(x As Individual) Not qe.Contains(x.Original_Id))
+            Return q1
+        End If
 
     End Function
 

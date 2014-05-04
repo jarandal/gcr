@@ -5,7 +5,7 @@ Imports System.Data.Objects
 Public Class BLIndividuals
 
     Friend Shared Function SearchByName(ctx As GcrContext, firstName As String, surName As String, Optional so As SearchOptions = Nothing) As List(Of Individual)
-        Dim q As ObjectQuery(Of Individual) = (From ind In ctx.Individuals)
+        Dim q As ObjectQuery(Of Individual) = (From ind In ctx.CurrentIndividuals(so))
         If Not String.IsNullOrWhiteSpace(firstName) Then q = q.Where(Function(x) x.FirstName.Contains(firstName))
         If Not String.IsNullOrWhiteSpace(surName) Then q = q.Where(Function(x) x.SurName.Contains(surName))
         q = GcrContext.ApplySearchOptions(q, so)
@@ -18,13 +18,13 @@ Public Class BLIndividuals
     End Function
 
     Friend Shared Function GetById(ctx As GcrContext, Id As String, Optional so As SearchOptions = Nothing) As Individual
-        Dim q As ObjectQuery(Of Individual) = (From ind In ctx.Individuals Where ind.Id = Id)
+        Dim q As ObjectQuery(Of Individual) = (From ind In ctx.CurrentIndividuals(so) Where ind.Id = Id)
         q = GcrContext.ApplySearchOptions(q, so)
         Return q.FirstOrDefault()
     End Function
 
     Friend Shared Function GetByOriginalId(ctx As GcrContext, Original_Id As String, Optional so As SearchOptions = Nothing) As Individual
-        Dim q As ObjectQuery(Of Individual) = (From ind In ctx.Individuals Where ind.Original_Id = Original_Id)
+        Dim q As ObjectQuery(Of Individual) = (From ind In ctx.CurrentIndividuals(so) Where ind.Original_Id = Original_Id)
         q = GcrContext.ApplySearchOptions(q, so)
         Return q.FirstOrDefault()
     End Function
@@ -42,7 +42,7 @@ Public Class BLIndividuals
     Public Shared Function GenerateSiteMapIndex(uploadpath As String, websiteuri As String) As String
 
         Dim ctx As New Gedcom.Model.GcrContext
-        Dim q As ObjectQuery(Of String) = (From ind In ctx.Individuals Select ind.Original_Id)
+        Dim q As ObjectQuery(Of String) = (From ind In ctx.CurrentIndividuals Select ind.Original_Id)
 
         Dim RANGE As Integer = 10000
         Dim count As Long = q.Count
@@ -110,6 +110,47 @@ Public Class BLIndividuals
         Dim smx As XDocument = SiteMap.SiteMapHelper.GenerateSiteIndex(list)
         Dim compressedBytes As System.IO.MemoryStream = SiteMap.SiteMapHelper.GZipSiteMap(smx)
         File.WriteAllBytes(filename, compressedBytes.ToArray)
+    End Sub
+
+    Public Shared Function validateLogin(user As String, password As String) As Boolean
+        If user.ToUpper.Trim = "contacto@genealogiachilenaenred.cl".ToUpper.Trim And _
+            password.Trim = "Abcd2016".Trim Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+
+    Public Shared Function IsDeleted(Original_Id As String) As Boolean
+        Dim ctx As New Gedcom.Model.GcrContext
+        Dim q As ObjectQuery(Of IndividualOptions) = From io In ctx.IndividualOptions Where io.Original_Id = Original_Id And io.Type = "deleted"
+        If q.Count > 0 Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+    Public Shared Sub Delete(Original_Id As String)
+
+        Dim ctx As New Gedcom.Model.GcrContext
+        Dim x As New IndividualOptions
+        x.Original_Id = Original_Id
+        x.Description = ""
+        x.Date = Now
+        x.Type = "deleted"
+        ctx.IndividualOptions.AddObject(x)
+        ctx.SaveChanges()
+
+    End Sub
+
+    Public Shared Sub Restore(Original_Id As String)
+        Dim ctx As New Gedcom.Model.GcrContext
+        Dim q As ObjectQuery(Of IndividualOptions) = From io In ctx.IndividualOptions Where io.Original_Id = Original_Id And io.Type = "deleted"
+        For Each auxio In q
+            auxio.Type = "restored"
+            auxio.Date = Now
+        Next
+        ctx.SaveChanges()
     End Sub
 
 

@@ -41,7 +41,7 @@ Public Class NotesPage
                 family = BLFamilies.GetById(Original_ID)
                 Me.txtNotes.Text = family.Notes
             Case "IND"
-                individual = BLIndividuals.GetByOriginalId(Original_ID)
+                individual = BLIndividuals.GetByOriginalId(Original_ID, New SearchOptions(IsAdmin:=Util.IsAdmin))
                 Me.txtNotes.Text = individual.Notes
         End Select
     End Sub

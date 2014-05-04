@@ -6,23 +6,22 @@
     <edmx:StorageModels>
     <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="ModelStoreContainer">
-          <EntitySet Name="Events" EntityType="Model.Store.Events" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Families" EntityType="Model.Store.Families" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="IndividualOptions" EntityType="Model.Store.IndividualOptions" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Individuals" EntityType="Model.Store.Individuals" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Media" EntityType="Model.Store.Media" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Events_temp" EntityType="Model.Store.Events" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Families_temp" EntityType="Model.Store.Families" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Individuals_temp" EntityType="Model.Store.Individuals" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Media_temp" EntityType="Model.Store.Media" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Request" EntityType="Model.Store.Request" store:Type="Tables" Schema="dbo" />
           <AssociationSet Name="FK_Childrens" Association="Model.Store.FK_Childrens">
-            <End Role="Families" EntitySet="Families" />
-            <End Role="Individuals" EntitySet="Individuals" />
+            <End Role="Families" EntitySet="Families_temp" />
+            <End Role="Individuals" EntitySet="Individuals_temp" />
           </AssociationSet>
           <AssociationSet Name="FK_IndividualEvent" Association="Model.Store.FK_IndividualEvent">
-            <End Role="Individuals" EntitySet="Individuals" />
-            <End Role="Events" EntitySet="Events" />
+            <End Role="Individuals" EntitySet="Individuals_temp" />
+            <End Role="Events" EntitySet="Events_temp" />
           </AssociationSet>
           <AssociationSet Name="FK_Media_Individuals" Association="Model.Store.FK_Media_Individuals">
-            <End Role="Individuals" EntitySet="Individuals" />
-            <End Role="Media" EntitySet="Media" />
+            <End Role="Individuals" EntitySet="Individuals_temp" />
+            <End Role="Media" EntitySet="Media_temp" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Events">
@@ -46,16 +45,6 @@
           <Property Name="Husband_Id" Type="nvarchar" MaxLength="200" />
           <Property Name="Wife_Id" Type="nvarchar" MaxLength="200" />
           <Property Name="Date" Type="datetime2" />
-        </EntityType>
-        <EntityType Name="IndividualOptions">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Original_Id" Type="nvarchar" Nullable="false" MaxLength="200" />
-          <Property Name="Date" Type="datetime2" />
-          <Property Name="Type" Type="nvarchar" MaxLength="50" />
-          <Property Name="Description" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Individuals">
           <Key>
@@ -161,7 +150,6 @@
             <End Role="Media" EntitySet="Media" />
           </AssociationSet>
           <EntitySet Name="Request" EntityType="Model.Request" />
-          <EntitySet Name="IndividualOptions" EntityType="Model.IndividualOptions" />
         </EntityContainer>
         <EntityType Name="Event">
           <Key>
@@ -273,16 +261,6 @@
           <Property Type="Int32" Name="AttachmentsQty" Nullable="false" />
           <Property Type="String" Name="Attachments" MaxLength="2000" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityType Name="IndividualOptions">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="Original_Id" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="Date" />
-          <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
-        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -291,7 +269,7 @@
   <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ModelContainer">
           <EntitySetMapping Name="Events">
             <EntityTypeMapping TypeName="Model.Event">
-              <MappingFragment StoreEntitySet="Events">
+              <MappingFragment StoreEntitySet="Events_temp">
                 <ScalarProperty Name="Place" ColumnName="Place" />
                 <ScalarProperty Name="Individual_Id" ColumnName="Individual_Id" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
@@ -303,7 +281,7 @@
           </EntitySetMapping>
           <EntitySetMapping Name="Families">
             <EntityTypeMapping TypeName="Model.Family">
-              <MappingFragment StoreEntitySet="Families">
+              <MappingFragment StoreEntitySet="Families_temp">
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="Wife_Id" ColumnName="Wife_Id" />
                 <ScalarProperty Name="Husband_Id" ColumnName="Husband_Id" />
@@ -315,7 +293,7 @@
           </EntitySetMapping>
           <EntitySetMapping Name="Individuals">
             <EntityTypeMapping TypeName="Model.Individual">
-              <MappingFragment StoreEntitySet="Individuals">
+              <MappingFragment StoreEntitySet="Individuals_temp">
                 <ScalarProperty Name="Distinguished" ColumnName="Distinguished" />
                 <ScalarProperty Name="Original_Id" ColumnName="Original_Id" />
                 <ScalarProperty Name="Dead" ColumnName="Dead" />
@@ -335,7 +313,7 @@
           </EntitySetMapping>
           <EntitySetMapping Name="Media">
             <EntityTypeMapping TypeName="Model.Media">
-              <MappingFragment StoreEntitySet="Media">
+              <MappingFragment StoreEntitySet="Media_temp">
                 <ScalarProperty Name="Individual_Id" ColumnName="Individual_Id" />
                 <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
@@ -358,17 +336,6 @@
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="IndividualOptions">
-            <EntityTypeMapping TypeName="Model.IndividualOptions">
-              <MappingFragment StoreEntitySet="IndividualOptions">
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Type" ColumnName="Type" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="Original_Id" ColumnName="Original_Id" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -412,7 +379,6 @@
           <ConnectorPoint PointX="5.25" PointY="4.9228011067708328" />
         </AssociationConnector>
         <EntityTypeShape EntityType="Model.Request" Width="1.5" PointX="0.75" PointY="6.75" Height="3.1340950520833317" />
-        <EntityTypeShape EntityType="Model.IndividualOptions" Width="1.5" PointX="7.375" PointY="0.75" Height="1.9802864583333317" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -151,8 +151,16 @@ Public Class frmImport
             Process_Import(ShortFileName)
 
 
-            ''Dim ShortFileName As String = Process_Upload(TST_ZIPFILENAME)
-            ''Process_Import(ShortFileName)
+            '' '' Intento de hacerlo directo a la base, fallido, 
+            ''Dim fi As New FileInfo(Filename)
+            ''Dim rootdir As String = fi.DirectoryName
+            ''Dim mediaFiles = Process_ConvertMedia()
+            ''Process_tempDB(Filename)
+            ''Dim zipfile As String = Process_Zip(Filename.Replace(".ged", ".zip"), rootdir, mediaFiles)
+            ''Dim ShortFileName As String = Process_Upload(zipfile)
+            ''File.Delete(zipfile)
+            ''Process_Import(ShortFileName, False)
+            ''BL.BLImport.RenameTempTables()
 
         End If
 
@@ -372,6 +380,14 @@ Public Class frmImport
 
     End Function
 
+    ''' <summary>
+    ''' Si el archivo sql no existe simplemente no lo incluye
+    ''' </summary>
+    ''' <param name="file"></param>
+    ''' <param name="rootdir"></param>
+    ''' <param name="medialist"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Function Process_Zip(file As String, rootdir As String, medialist As List(Of String)) As String
 
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Comprimiendo archivos", 0))
@@ -382,7 +398,10 @@ Public Class frmImport
 
 
         Using zip1 As ZipFile = New ZipFile
-            zip1.AddFile(file, "\")
+
+            If System.IO.File.Exists(file) Then
+                zip1.AddFile(file, "\")
+            End If
 
             For Each f In medialist
                 Dim fi As New FileInfo(f)
@@ -402,6 +421,8 @@ Public Class frmImport
         Return zipName
 
     End Function
+
+    
 
     Const LFL As String = "http://localhost/gcr/FileUpload.ashx"
     Const RFL As String = "http://genealogiachilenaenred.cl/FileUpload.ashx"
@@ -458,12 +479,12 @@ Public Class frmImport
 
     Dim Process_Import_Running As Boolean = False
 
-    Public Sub Process_Import(uploadedfilename As String)
+    Public Sub Process_Import(uploadedfilename As String, Optional processSQL As Boolean = True)
 
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Procesando archivo en el servidor", 0))
 
         Dim ub As UriBuilder = New UriBuilder(My.Settings.WebSite.TrimEnd("/c") & "/Process.ashx")
-        ub.Query = String.Format("filename={0}", uploadedfilename)
+        ub.Query = String.Format("processSQL={0}&filename={1}", processSQL, uploadedfilename)
 
         Dim wc As New WebClient
         AddHandler wc.DownloadStringCompleted, AddressOf Process_Import_Completed
@@ -521,12 +542,22 @@ Public Class frmImport
         End If
     End Sub
 
-
-
     Public Sub Process_LocalDB(gedcomfile As String)
         Dim blimport As Gedcom.BL.BLImport
         blimport = New Gedcom.BL.BLImport
         Dim connectionstring As String = blimport.CreateSqlExpressDatabase()
+        RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Leyendo archivo de individuos", 0))
+        AddHandler blimport.ReadGedComPercentageDone, AddressOf BLImport_GedComReaderProcessProgress
+        AddHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
+        blimport.importParallel(gedcomfile, 5, connectionstring)
+        RemoveHandler blimport.ReadGedComPercentageDone, AddressOf BLImport_GedComReaderProcessProgress
+        RemoveHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
+    End Sub
+
+    Public Sub Process_tempDB(gedcomfile As String)
+        Dim blimport As Gedcom.BL.BLImport
+        blimport = New Gedcom.BL.BLImport
+        Dim connectionstring As String = Gedcom.BL.BLImport.CreateTempTables()
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Leyendo archivo de individuos", 0))
         AddHandler blimport.ReadGedComPercentageDone, AddressOf BLImport_GedComReaderProcessProgress
         AddHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
@@ -547,8 +578,6 @@ Public Class frmImport
         RemoveHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
         Return sqlFileName
     End Function
-
-
 
     Private Sub BLImport_ImportPercentageDone(sender As Object, e As Gedcom.BL.BLImport.ImportPercentageDoneEventArgs)
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Importando individuos a la base de datos", e.ProgressPrecentage))

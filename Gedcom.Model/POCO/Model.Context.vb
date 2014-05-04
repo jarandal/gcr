@@ -39,7 +39,7 @@ Partial Public Class ModelContainer
     Public ReadOnly Property Events() As ObjectSet(Of [Event])
         Get
             If _events Is Nothing Then
-                _events = CreateObjectSet(Of [Event])("Events")
+                _events = CreateObjectSet(Of [Event])("Events" & PostFix)
             End If
             Return _events
         End Get
@@ -49,7 +49,7 @@ Partial Public Class ModelContainer
     Public ReadOnly Property Families() As ObjectSet(Of Family)
         Get
             If _families Is Nothing Then
-                _families = CreateObjectSet(Of Family)("Families")
+                _families = CreateObjectSet(Of Family)("Families" & PostFix)
             End If
             Return _families
         End Get
@@ -59,7 +59,7 @@ Partial Public Class ModelContainer
     Public ReadOnly Property Individuals() As ObjectSet(Of Individual)
         Get
             If _individuals Is Nothing Then
-                _individuals = CreateObjectSet(Of Individual)("Individuals")
+                _individuals = CreateObjectSet(Of Individual)("Individuals" & PostFix)
             End If
             Return _individuals
         End Get
@@ -69,7 +69,7 @@ Partial Public Class ModelContainer
     Public ReadOnly Property Media() As ObjectSet(Of Media)
         Get
             If _media Is Nothing Then
-                _media = CreateObjectSet(Of Media)("Media")
+                _media = CreateObjectSet(Of Media)("Media" & PostFix)
             End If
             Return _media
         End Get
@@ -79,12 +79,33 @@ Partial Public Class ModelContainer
     Public ReadOnly Property Request() As ObjectSet(Of Request)
         Get
             If _request Is Nothing Then
-                _request = CreateObjectSet(Of Request)("Request")
+                _request = CreateObjectSet(Of Request)("Request" & PostFix)
             End If
             Return _request
         End Get
     End Property
     Private _request As ObjectSet(Of Request)
 
+    Public ReadOnly Property IndividualOptions() As ObjectSet(Of IndividualOptions)
+        Get
+            If _individualOptions Is Nothing Then
+                _individualOptions = CreateObjectSet(Of IndividualOptions)("IndividualOptions" & PostFix)
+            End If
+            Return _individualOptions
+        End Get
+    End Property
+    Private _individualOptions As ObjectSet(Of IndividualOptions)
+
 #End Region
+
+    Private _postfix As String = ""
+    Public Property PostFix() As String
+        Get
+            Return _postfix
+        End Get
+        Set(ByVal value As String)
+            _postfix = value
+        End Set
+    End Property
+
 End Class

@@ -89,7 +89,7 @@ region.Begin("ObjectSet Properties")
     <#=Accessibility.ForReadOnlyProperty(entitySet)#> ReadOnly Property <#=code.Escape(entitySet)#>() As ObjectSet(Of <#=code.Escape(entitySet.ElementType)#>)
         Get
             If <#=code.FieldName(entitySet) #> Is Nothing Then
-                <#=code.FieldName(entitySet)#> = CreateObjectSet(Of <#=code.Escape(entitySet.ElementType)#>)("<#=entitySet.Name#>")
+                <#=code.FieldName(entitySet)#> = CreateObjectSet(Of <#=code.Escape(entitySet.ElementType)#>)("<#=entitySet.Name#>" & PostFix)
             End If
             Return <#=code.FieldName(entitySet)#>
         End Get
@@ -135,6 +135,17 @@ region.Begin("Function Imports")
 
     region.End()
 #>
+
+    Private _postfix As String = ""
+    Public Property PostFix() As String
+        Get
+            Return _postfix
+        End Get
+        Set(ByVal value As String)
+            _postfix = value
+        End Set
+    End Property
+
 End Class
 <#
 If Not String.IsNullOrEmpty(namespaceName) Then

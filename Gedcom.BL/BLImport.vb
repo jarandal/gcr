@@ -53,40 +53,6 @@ Public Class BLImport
         individualsTotal = 0
     End Sub
 
-    ''Public Sub import(gedcomfile As String, Optional connectionstring As String = "")
-
-    ''    Dim ctx As Gedcom.Model.GcrContext
-
-    ''    ctx = getCtx(connectionstring)
-    ''    ctx.RebuildDatabase()
-    ''    ClearAux()
-
-    ''    x = New GedcomParser.GedcomRecordReader
-
-    ''    x.ReadGedcom(gedcomfile)
-    ''    Dim gcd As Gedcom.GedcomDatabase = x.Database
-    ''    Dim i As Long
-
-    ''    Dim total As Long = gcd.Individuals.LongCount
-
-    ''    i = 0
-    ''    For Each ind In gcd.Individuals
-    ''        insertIndividual(ctx, ind)
-    ''        i = i + 1
-    ''        If (i Mod 100) = 0 Then
-    ''            ctx.SaveChanges()
-    ''            Progress = CInt(i / total * 100)
-    ''            RaiseEvent ImportPercentageDone(Me, System.EventArgs.Empty)
-    ''            ctx.Dispose()
-    ''            ctx = getCtx(connectionstring)
-    ''        End If
-    ''    Next
-
-    ''    ctx.SaveChanges()
-    ''    ctx.Dispose()
-
-    ''End Sub
-
     Class Range
         Public start_index As Long
         Public end_index As Long
@@ -123,8 +89,8 @@ Public Class BLImport
                          End Select
                      End Sub)
 
-
         sw.Stop()
+
         log.InfoFormat("Modo='{0}' Paralelismo={1} Milisegundos={2}", strInfo, Paralellism, sw.ElapsedMilliseconds)
 
         Dim ctx As Gedcom.Model.GcrContext = getCtx(connectionstring)
@@ -312,13 +278,14 @@ Public Class BLImport
     End Sub
 
 
-    Private Function getCtx(Optional connectionstring As String = "") As Gedcom.Model.GcrContext
+    Private Function getCtx(Optional connectionstring As String = "", Optional PostFIx As String = "") As Gedcom.Model.GcrContext
         Dim ctx As Gedcom.Model.GcrContext
         If Not String.IsNullOrWhiteSpace(connectionstring) Then
             ctx = New Gedcom.Model.GcrContext(connectionstring)
         Else
             ctx = New Gedcom.Model.GcrContext()
         End If
+        ctx.PostFix = "_temp"
         Return ctx
     End Function
 
@@ -491,6 +458,14 @@ Public Class BLImport
         Return Gedcom.Model.GcrContext.CreateSqlExpressDatabase()
     End Function
 
+
+    Public Shared Function CreateTempTables() As String
+        Return Gedcom.Model.GcrContext.CreateTempTables()
+    End Function
+
+    Public Shared Sub RenameTempTables()
+        Gedcom.Model.GcrContext.RenameTempTables()
+    End Sub
     'Public Sub BackupSqlExpressDatabase(filename As String)
     '    Gedcom.Model.GcrContext.BackupSqlExpressDatabase(filename)
     'End Sub

@@ -31,7 +31,7 @@ Public Class SearchPage
 
 
     Public Sub Search()
-        Dim r = BLIndividuals.SearchByName(Me.txtFirstName.Text, Me.txtSurName.Text, New SearchOptions(Max:=MaxReg))
+        Dim r = BLIndividuals.SearchByName(Me.txtFirstName.Text, Me.txtSurName.Text, New SearchOptions(Max:=MaxReg, IsAdmin:=Util.IsAdmin))
         If r.Count > 0 Then
             ResultList.Individuals = r
             pnlResults.Visible = True

@@ -93,7 +93,7 @@ Public Class IndividualPage
             End If
 
             If Not String.IsNullOrWhiteSpace(Original_ID) Then
-                individual = BLIndividuals.GetByOriginalId(Original_ID, New SearchOptions(Includes:="Family,Media"))
+                individual = BLIndividuals.GetByOriginalId(Original_ID, New SearchOptions(Includes:="Family,Media", IsAdmin:=Util.IsAdmin))
                 If Not IsNothing(individual) Then
                     XRefID = individual.Id
 
@@ -140,8 +140,8 @@ Public Class IndividualPage
 
                     If Not IsNothing(individual.Family) Then
                         family = individual.Family
-                        FatherUC.Individual = BLIndividuals.GetById(family.Husband_Id)
-                        MotherUC.Individual = BLIndividuals.GetById(family.Wife_Id)
+                        FatherUC.Individual = BLIndividuals.GetById(family.Husband_Id, New SearchOptions(IsAdmin:=Util.IsAdmin))
+                        MotherUC.Individual = BLIndividuals.GetById(family.Wife_Id, New SearchOptions(IsAdmin:=Util.IsAdmin))
                         If Not IsNothing(FatherUC.Individual) OrElse Not IsNothing(MotherUC.Individual) Then
                             pnlParents.Visible = True
                         End If
@@ -187,7 +187,19 @@ Public Class IndividualPage
                     Else
                         lnkNotes.HRef = "NotesPage.aspx?ID=" & Original_ID & "&KIND=IND"
                     End If
+                Else
+                    FullName = "Este registro ha sido eliminado"
+                End If
+            End If
 
+            If Util.IsAdmin Then
+                Me.pnlAdmin.Visible = True
+                If BLIndividuals.IsDeleted(Original_ID) Then
+                    Me.btnDelete.Visible = False
+                    Me.btnRestore.Visible = True
+                Else
+                    Me.btnRestore.Visible = False
+                    Me.btnDelete.Visible = True
                 End If
             End If
         End If
@@ -203,10 +215,10 @@ Public Class IndividualPage
 
                 If family.Husband_Id = XRefID Then
                     '\\ Es el esposo
-                    SpouseUC.Individual = BLIndividuals.GetById(family.Wife_Id)
+                    SpouseUC.Individual = BLIndividuals.GetById(family.Wife_Id, New SearchOptions(IsAdmin:=Util.IsAdmin))
                 Else
                     '\\ es la esposa
-                    SpouseUC.Individual = BLIndividuals.GetById(family.Husband_Id)
+                    SpouseUC.Individual = BLIndividuals.GetById(family.Husband_Id, New SearchOptions(IsAdmin:=Util.IsAdmin))
                 End If
 
 
@@ -238,4 +250,15 @@ Public Class IndividualPage
         RefreshChildrens()
     End Sub
 
+    Protected Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        BLIndividuals.Delete(Original_ID)
+        Me.btnDelete.Visible = False
+        Me.btnRestore.Visible = True
+    End Sub
+
+    Protected Sub btnRestore_Click(sender As Object, e As EventArgs) Handles btnRestore.Click
+        BLIndividuals.Restore(Original_ID)
+        Me.btnDelete.Visible = True
+        Me.btnRestore.Visible = False
+    End Sub
 End Class

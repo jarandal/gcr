@@ -32,6 +32,33 @@ Partial Public Class IndividualPage
     Protected WithEvents pnlIndividual As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
+    '''pnlAdmin control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlAdmin As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''btnDelete control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnDelete As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''btnRestore control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnRestore As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''IndividualUC control.
     '''</summary>
     '''<remarks>

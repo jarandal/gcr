@@ -32,3 +32,29 @@ ALTER TABLE [dbo].[Request] ADD  CONSTRAINT [DF_Request_AttachmentsQty]  DEFAULT
 GO
 
 
+
+USE [gcr_db]
+GO
+
+/****** Object:  Table [dbo].[IndividualOptions]    Script Date: 05/04/2014 12:28:58 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[IndividualOptions](
+	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Original_Id] [nvarchar](200) NOT NULL,
+	[Date] [datetime2](7) NULL,
+	[Type] [nvarchar](50) NULL,
+	[Description] [nvarchar](200) NULL,
+ CONSTRAINT [PK_IndividualOptions] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
