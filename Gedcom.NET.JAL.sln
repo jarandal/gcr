@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gedcom", "Gedcom\Gedcom.csproj", "{872AE81C-2178-4D2B-9077-34A8AD1595D9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C006EBC3-3802-430C-914D-ED54AC81DE98} = {C006EBC3-3802-430C-914D-ED54AC81DE98}
@@ -30,9 +32,46 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadClient", "FileUpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightFileUpload", "FileUpload\SilverlightFileUpload\SilverlightFileUpload.csproj", "{86B590BE-E14A-4252-BFF0-7148D45F99DF}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Gedcom.Import.Setup", "Installer\Installer.vdproj", "{C621D1C2-B474-412F-AD50-F4BBD3809D0D}"
-EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lagartron.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FileUpload\\FileUploadClient\\FileUploadClient.csproj
+		SccProjectName1 = FileUpload/FileUploadClient
+		SccLocalPath1 = FileUpload\\FileUploadClient
+		SccProjectUniqueName2 = FileUpload\\SilverlightFileUpload\\SilverlightFileUpload.csproj
+		SccProjectName2 = FileUpload/SilverlightFileUpload
+		SccLocalPath2 = FileUpload\\SilverlightFileUpload
+		SccProjectUniqueName3 = FileUpload\\SilverlightFileUploadWeb\\SilverlightFileUploadWeb.csproj
+		SccProjectName3 = FileUpload/SilverlightFileUploadWeb
+		SccLocalPath3 = FileUpload\\SilverlightFileUploadWeb
+		SccProjectUniqueName4 = Gedcom.BL\\Gedcom.BL.vbproj
+		SccProjectName4 = Gedcom.BL
+		SccLocalPath4 = Gedcom.BL
+		SccProjectUniqueName5 = Gedcom.Import\\Gedcom.Import.vbproj
+		SccProjectName5 = Gedcom.Import
+		SccLocalPath5 = Gedcom.Import
+		SccProjectUniqueName6 = Gedcom.Model\\Gedcom.Model.vbproj
+		SccProjectName6 = Gedcom.Model
+		SccLocalPath6 = Gedcom.Model
+		SccProjectUniqueName7 = Gedcom.Web\\Gedcom.Web.vbproj
+		SccProjectName7 = Gedcom.Web
+		SccLocalPath7 = Gedcom.Web
+		SccProjectUniqueName8 = Gedcom\\Gedcom.csproj
+		SccProjectName8 = Gedcom
+		SccLocalPath8 = Gedcom
+		SccProjectUniqueName9 = GedcomParser\\GedcomParser.csproj
+		SccProjectName9 = GedcomParser
+		SccLocalPath9 = GedcomParser
+		SccProjectUniqueName10 = Utility\\Utility.csproj
+		SccProjectName10 = Utility
+		SccLocalPath10 = Utility
+		SccProjectUniqueName11 = WinFormTest\\WinFormTest.vbproj
+		SccProjectName11 = WinFormTest
+		SccLocalPath11 = WinFormTest
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug - VS|Any CPU = Debug - VS|Any CPU
 		Debug - VS|Mixed Platforms = Debug - VS|Mixed Platforms
@@ -268,18 +307,6 @@ Global
 		{86B590BE-E14A-4252-BFF0-7148D45F99DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{86B590BE-E14A-4252-BFF0-7148D45F99DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{86B590BE-E14A-4252-BFF0-7148D45F99DF}.Release|x86.ActiveCfg = Release|Any CPU
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug - VS|Any CPU.ActiveCfg = Debug
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug - VS|Mixed Platforms.ActiveCfg = Debug
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug - VS|x86.ActiveCfg = Debug
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug|Any CPU.ActiveCfg = Debug
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Debug|x86.ActiveCfg = Debug
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release - VS|Any CPU.ActiveCfg = Release
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release - VS|Mixed Platforms.ActiveCfg = Release
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release - VS|x86.ActiveCfg = Release
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release|Any CPU.ActiveCfg = Release
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release|Mixed Platforms.ActiveCfg = Release
-		{C621D1C2-B474-412F-AD50-F4BBD3809D0D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
