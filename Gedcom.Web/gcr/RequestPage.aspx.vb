@@ -26,71 +26,77 @@ Public Class RequestPage
 
     Protected Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
 
-        CaptchaControl1.ValidateCaptcha(txtCaptcha.Text)
+        Try
+            CaptchaControl1.ValidateCaptcha(txtCaptcha.Text)
 
-        If (CaptchaControl1.UserValidated) Then
+            If (CaptchaControl1.UserValidated) Then
 
 
-            Dim fu As FileUpload = Nothing
-            Dim filenames As String = ""
-            Dim files As New List(Of String)
+                Dim fu As FileUpload = Nothing
+                Dim filenames As String = ""
+                Dim files As New List(Of String)
 
-            Dim funame As String = "FileUpload"
-            Dim i As Integer
-            For i = 1 To 100
-                fu = FileUploadContainer.FindControl(funame & i)
-                If Not IsNothing(fu) Then
-                    Dim uploadPath As String = Context.Server.MapPath("~/Upload").TrimEnd("\"c) & "\Attachments\"
-                    If Not Directory.Exists(uploadPath) Then Directory.CreateDirectory(uploadPath)
-                    Dim tempfile As String = uploadPath & fu.FileName
-                    If Not String.IsNullOrEmpty(fu.FileName) Then
-                        fu.SaveAs(tempfile)
-                        files.Add(tempfile)
-                        filenames = filenames + " " & tempfile
+                Dim funame As String = "FileUpload"
+                Dim i As Integer
+                For i = 1 To 100
+                    fu = FileUploadContainer.FindControl(funame & i)
+                    If Not IsNothing(fu) Then
+                        Dim uploadPath As String = Context.Server.MapPath("~/Upload").TrimEnd("\"c) & "\Attachments\"
+                        If Not Directory.Exists(uploadPath) Then Directory.CreateDirectory(uploadPath)
+                        Dim tempfile As String = uploadPath & fu.FileName
+                        If Not String.IsNullOrEmpty(fu.FileName) Then
+                            fu.SaveAs(tempfile)
+                            files.Add(tempfile)
+                            filenames = filenames + " " & tempfile
+                        End If
                     End If
+                Next
+
+
+                Me.pnlOK.Visible = False
+                Me.pnlError.Visible = False
+
+                Dim x As Model.Request = Nothing
+
+                Try
+                    x = New Model.Request
+                    x.IP = Request.UserHostAddress
+                    x.Name = Me.txtName.Text
+                    x.Reason = Me.ddlReason.SelectedItem.Text
+                    x.Text = Me.txtText.Text
+                    x.Date = Now
+                    x.Email = Me.txtEmail.Text
+                    x.Phone = Me.txtPhoneNumber.Text
+                    x.Original_Id = "I1"
+                    x.Attachments = filenames
+                    x.AttachmentsQty = files.Count
+
+                    BL.BLRequest.Add(x)
+
+                    xRequest = x
+                    xFiles = files
+
+                    Dim t As New System.Threading.Thread(AddressOf sendmail)
+                    t.Start()
+
+                    Me.pnlOK.Visible = True
+                    trCaptcha.Visible = False
+
+                Catch ex As Exception
+                    log.ErrorFormat("Error al enviar requerimiento (1) {0} {1}", ex.Message, ex.ToString)
+                    pnlError.Visible = True
+                End Try
+
+                If pnlOK.Visible = True Then
+                    Me.btnEnviar.Visible = False
                 End If
-            Next
 
-
-            Me.pnlOK.Visible = False
-            Me.pnlError.Visible = False
-
-            Dim x As Model.Request = Nothing
-
-            Try
-                x = New Model.Request
-                x.IP = Request.UserHostAddress
-                x.Name = Me.txtName.Text
-                x.Reason = Me.ddlReason.SelectedItem.Text
-                x.Text = Me.txtText.Text
-                x.Date = Now
-                x.Email = Me.txtEmail.Text
-                x.Phone = Me.txtPhoneNumber.Text
-                x.Original_Id = "I1"
-                x.Attachments = filenames
-                x.AttachmentsQty = files.Count
-
-                BL.BLRequest.Add(x)
-
-                xRequest = x
-                xFiles = files
-
-                Dim t As New System.Threading.Thread(AddressOf sendmail)
-                t.Start()
-
-                Me.pnlOK.Visible = True
-                trCaptcha.Visible = False
-
-            Catch ex As Exception
-                log.ErrorFormat("Error al guardar requerimiento {0} {1}", ex.Message, ex.ToString)
-                pnlError.Visible = True
-            End Try
-
-            If pnlOK.Visible = True Then
-                Me.btnEnviar.Visible = False
             End If
 
-        End If
+        Catch ex As Exception
+            log.ErrorFormat("Error al enviar requerimiento (2) {0} {1}", ex.Message, ex.ToString)
+            pnlError.Visible = True
+        End Try
 
     End Sub
 
