@@ -15,7 +15,7 @@
     <AssemblyName>Gedcom.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -29,6 +29,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +76,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -158,6 +160,7 @@
     <Content Include="App_Browsers\firefox.browser" />
     <Content Include="App_Browsers\ie.browser" />
     <None Include="My Project\PublishProfiles\genealogiachilenaenred.cl - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\test.genealogiachilenaenred.cl - Web Deploy.pubxml" />
     <None Include="My Project\PublishProfiles\w2008r2.pubxml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
@@ -362,7 +365,7 @@
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>4807</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/gcr</IISUrl>
+          <IISUrl>http://localhost:4807/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

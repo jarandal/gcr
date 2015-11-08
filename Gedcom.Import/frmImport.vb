@@ -143,9 +143,12 @@ Public Class frmImport
             Dim fi As New FileInfo(Filename)
             Dim rootdir As String = fi.DirectoryName
             Dim mediaFiles = Process_ConvertMedia()
-            Dim backupfilename As String = Process_ExportSql(Filename)
-            Dim zipfile As String = Process_Zip(backupfilename, rootdir, mediaFiles)
-            File.Delete(backupfilename)
+            Dim sqlFileName As String = System.IO.Path.GetTempPath().TrimEnd("\"c) & "\BIR_" & Now.ToString("ddMMyyhhmmss") & ".sql"
+            Dim backupfilenames = Process_ExportSql(Filename, sqlFileName)
+            Dim zipfile As String = Process_Zip(sqlFileName, backupfilenames, rootdir, mediaFiles)
+            For Each s In backupfilenames
+                File.Delete(s)
+            Next
             Dim ShortFileName As String = Process_Upload(zipfile)
             File.Delete(zipfile)
             Process_Import(ShortFileName)
@@ -388,20 +391,23 @@ Public Class frmImport
     ''' <param name="medialist"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    Public Function Process_Zip(file As String, rootdir As String, medialist As List(Of String)) As String
+    Public Function Process_Zip(file As String, filenames As List(Of String), rootdir As String, medialist As List(Of String)) As String
 
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Comprimiendo archivos", 0))
 
         Dim sqlfi As New FileInfo(file)
+
         Dim pos As Integer = sqlfi.Name.LastIndexOf("."c)
         Dim zipName As String = System.IO.Path.GetTempPath().TrimEnd("\"c) & "\" & sqlfi.Name.Substring(0, pos) & ".zip"
 
 
         Using zip1 As ZipFile = New ZipFile
 
-            If System.IO.File.Exists(file) Then
-                zip1.AddFile(file, "\")
-            End If
+            For Each s In filenames
+                If System.IO.File.Exists(s) Then
+                    zip1.AddFile(s, "\")
+                End If
+            Next
 
             For Each f In medialist
                 Dim fi As New FileInfo(f)
@@ -413,7 +419,7 @@ Public Class frmImport
                 End Try
             Next
 
-            AddHandler zip1.SaveProgress, _
+            AddHandler zip1.SaveProgress,
                    New EventHandler(Of SaveProgressEventArgs)(AddressOf Me.zip1_SaveProgress)
             zip1.Save(zipName)
         End Using
@@ -422,10 +428,8 @@ Public Class frmImport
 
     End Function
 
-    
+    Const LFL As String = "FileUpload.ashx"
 
-    Const LFL As String = "http://localhost/gcr/FileUpload.ashx"
-    Const RFL As String = "http://genealogiachilenaenred.cl/FileUpload.ashx"
     Public Function Process_Upload(uploadfile As String) As String
         If File.Exists(uploadfile) Then
 
@@ -438,11 +442,7 @@ Public Class frmImport
             f.File = New FileInfo(uploadfile)
             f.ChunkSize = "2500000"
 
-            If My.Settings.WebSite.ToUpper.Contains("LOCALHOST") Then
-                f.UploadUrl = New System.UriBuilder(LFL).Uri
-            Else
-                f.UploadUrl = New System.UriBuilder(RFL).Uri
-            End If
+            f.UploadUrl = New System.UriBuilder(My.Settings.WebSite & LFL).Uri
             f.Upload()
 
             Debug.WriteLine("WebUpload Uri ='" & f.UploadUrl.ToString & "'")
@@ -456,8 +456,8 @@ Public Class frmImport
             RaiseEvent ProcessProgress(Me, New ProcessEventArgs("MSGBOX El archivo no existe", 0))
         End If
 
-            Dim fi As New FileInfo(uploadfile)
-            Return fi.Name
+        Dim fi As New FileInfo(uploadfile)
+        Return fi.Name
 
     End Function
 
@@ -489,33 +489,34 @@ Public Class frmImport
         Dim wc As New WebClient
         AddHandler wc.DownloadStringCompleted, AddressOf Process_Import_Completed
         wc.DownloadStringAsync(ub.Uri)
-        Process_Import_Running = True
 
-        While Process_Import_Running
+        'Process_Import_Running = True
 
-            System.Threading.Thread.Sleep(2000)
-            Application.DoEvents()
+        'While Process_Import_Running
 
-            Try
-                Dim ub2 As UriBuilder = New UriBuilder(My.Settings.WebSite.TrimEnd("/c") & "/Process.ashx")
-                ub2.Query = "GetProgress=True"
-                Dim wc2 As New WebClient
-                Dim aux As String = wc2.DownloadString(ub2.Uri)
-                If IsNumeric(aux) Then
-                    RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Procesando archivo en el servidor", CInt(aux)))
-                    If CInt(aux) = 100 Then
-                        Exit While
-                    End If
-                Else
-                    RaiseEvent ProcessProgress(Me, New ProcessEventArgs("MSGBOX Error al recuperar el progreso '" & aux & "'", 0))
-                End If
-                wc2.Dispose()
-            Catch ex As Exception
-                log.ErrorFormat("Error ignorado al consultar el progreso {0} - {1}", ex.Message, ex.ToString)
-            End Try
-        End While
+        '    System.Threading.Thread.Sleep(2000)
+        '    Application.DoEvents()
 
-        wc.Dispose()
+        '    Try
+        '        Dim ub2 As UriBuilder = New UriBuilder(My.Settings.WebSite.TrimEnd("/c") & "/Process.ashx")
+        '        ub2.Query = "GetProgress=True"
+        '        Dim wc2 As New WebClient
+        '        Dim aux As String = wc2.DownloadString(ub2.Uri)
+        '        If IsNumeric(aux) Then
+        '            RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Procesando archivo en el servidor", CInt(aux)))
+        '            If CInt(aux) = 100 Then
+        '                Exit While
+        '            End If
+        '        Else
+        '            RaiseEvent ProcessProgress(Me, New ProcessEventArgs("MSGBOX Error al recuperar el progreso '" & aux & "'", 0))
+        '        End If
+        '        wc2.Dispose()
+        '    Catch ex As Exception
+        '        log.ErrorFormat("Error ignorado al consultar el progreso {0} - {1}", ex.Message, ex.ToString)
+        '    End Try
+        'End While
+
+        'wc.Dispose()
 
     End Sub
 
@@ -566,17 +567,16 @@ Public Class frmImport
         RemoveHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
     End Sub
 
-    Public Function Process_ExportSql(gedcomfile As String) As String
+    Public Function Process_ExportSql(gedcomfile As String, sqlfilename As String) As List(Of String)
         Dim blimport As Gedcom.BL.BLImport
         blimport = New Gedcom.BL.BLImport
         RaiseEvent ProcessProgress(Me, New ProcessEventArgs("Leyendo archivo de individuos", 0))
         AddHandler blimport.ReadGedComPercentageDone, AddressOf BLImport_GedComReaderProcessProgress
         AddHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
-        Dim sqlFileName As String = System.IO.Path.GetTempPath().TrimEnd("\"c) & "\BIR_" & Now.ToString("ddMMyyhhmmss") & ".sql"
-        blimport.exportToFile(gedcomfile, sqlFileName)
+        Dim files As List(Of String) = blimport.exportToFiles(gedcomfile, sqlfilename)
         RemoveHandler blimport.ReadGedComPercentageDone, AddressOf BLImport_GedComReaderProcessProgress
         RemoveHandler blimport.ImportPercentageDone, AddressOf BLImport_ImportPercentageDone
-        Return sqlFileName
+        Return files
     End Function
 
     Private Sub BLImport_ImportPercentageDone(sender As Object, e As Gedcom.BL.BLImport.ImportPercentageDoneEventArgs)

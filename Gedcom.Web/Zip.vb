@@ -5,8 +5,9 @@ Imports ICSharpCode.SharpZipLib.Zip
 
 Public Class Zip
 
-    Public Shared Sub ExtractZipFile(archiveFilenameIn As String, outFolder As String, Optional password As String = "")
+    Public Shared Function ExtractZipFile(archiveFilenameIn As String, outFolder As String, Optional password As String = "") As List(Of String)
         Dim zf As ZipFile = Nothing
+        ExtractZipFile = New List(Of String)
         Try
             Dim fs As FileStream = File.OpenRead(archiveFilenameIn)
             zf = New ZipFile(fs)
@@ -51,6 +52,9 @@ Public Class Zip
                             StreamUtils.Copy(zipStream, streamWriter, buffer)
                         End Using
                     End If
+
+                    ExtractZipFile.Add(fullZipToPath)
+
                 Catch ex As Exception
                     '\\ ignora cualquier error al descomprimir los archivos en forma individual
                 End Try
@@ -62,5 +66,5 @@ Public Class Zip
                 zf.Close()
             End If
         End Try
-    End Sub
+    End Function
 End Class

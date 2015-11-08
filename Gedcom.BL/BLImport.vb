@@ -128,7 +128,7 @@ Public Class BLImport
 
     End Sub
 
-    Public Sub exportToFile(gedcomfile As String, filename As String)
+    Public Function exportToFiles(gedcomfile As String, filename As String) As List(Of String)
 
         Dim gcd As Gedcom.GedcomDatabase = LeerArchivoGedcom(gedcomfile)
 
@@ -147,40 +147,72 @@ Public Class BLImport
 
         Dim files As New List(Of String)
 
-        Dim indsql As String = filename & ".ind"
-        Dim famsql As String = filename & ".fam"
+        Dim nro As Integer = 4
 
-        files.Add(indsql)
-        files.Add(famsql)
+        Dim indsql(nro) As String
+        Dim famsql(nro) As String
+        Dim indwriter(nro) As System.IO.StreamWriter
+        Dim famwriter(nro) As System.IO.StreamWriter
 
-        Dim writer1 As New System.IO.StreamWriter(famsql, False, System.Text.Encoding.Unicode)
-        Dim writer2 As New System.IO.StreamWriter(indsql, False, System.Text.Encoding.Unicode)
+
+
+        For i = 0 To nro - 1
+            indsql(i) = filename & "_" & i.ToString("000") & ".ind"
+            famsql(i) = filename & "_" & i.ToString("000") & ".fam"
+            files.Add(indsql(i))
+            files.Add(famsql(i))
+            indwriter(i) = New System.IO.StreamWriter(indsql(i), False, System.Text.Encoding.Unicode)
+            famwriter(i) = New System.IO.StreamWriter(famsql(i), False, System.Text.Encoding.Unicode)
+        Next
 
         '\\ individuos y familias en paralelo
-        Parallel.For(0, 2, _
+
+        'Parallel.For(0, 2 * nro,
+
+        Parallel.For(0, 2 * nro,
                      Sub(index)
-                         Select Case index
-                             Case 0
-                                 writer1.WriteLine("-- FAMILIES --")
-                                 writer1.WriteLine("GO")
-                                 importFamiliesRange(gcd, 0, gcd.Families.Count - 1, "", writer1)
-                             Case 1
-                                 writer1.WriteLine("-- INDIVIDUALS --")
-                                 writer1.WriteLine("GO")
-                                 importIndividualRange(gcd, 0, gcd.Individuals.Count - 1, "", writer2)
-                         End Select
+                         Dim j As Integer = index Mod 2
+                         Dim ix As Integer = (index \ 2)
+                         If j = 0 Then
+                             Dim t As Integer = gcd.Families.Count
+                             famwriter(ix).WriteLine("-- FAMILIES --")
+                             famwriter(ix).WriteLine("GO")
+                             Dim ini As Integer = getpos(t, ix, nro)
+                             Dim fin As Integer = getpos(t, ix + 1, nro) - 1
+                             importFamiliesRange(gcd, ini, fin, "", famwriter(ix))
+                         End If
+                         If j = 1 Then
+                             Dim t As Integer = gcd.Individuals.Count
+                             indwriter(ix).WriteLine("-- INDIVIDUALS --")
+                             indwriter(ix).WriteLine("GO")
+                             Dim ini As Integer = getpos(t, ix, nro)
+                             Dim fin As Integer = getpos(t, ix + 1, nro) - 1
+                             importIndividualRange(gcd, ini, fin, "", indwriter(ix))
+                         End If
                      End Sub)
-        writer1.Close()
-        writer2.Close()
 
-        mergefiles(filename, files)
+        For i = 0 To nro - 1
+            famwriter(i).Close()
+            indwriter(i).Close()
 
-        If System.IO.File.Exists(indsql) Then System.IO.File.Delete(indsql)
-        If System.IO.File.Exists(famsql) Then System.IO.File.Delete(famsql)
+        Next
+
+        'mergefiles(filename, files)
+        'If System.IO.File.Exists(indsql) Then System.IO.File.Delete(indsql)
+        'If System.IO.File.Exists(famsql) Then System.IO.File.Delete(famsql)
 
         sw.Stop()
         log.Info("Finaliza la generacion del archivo sql")
-    End Sub
+        Return files
+    End Function
+
+    Function getpos(total, index, maxindex) As Integer
+        If index < maxindex Then
+            Return CInt(total / maxindex * index)
+        Else
+            Return total
+        End If
+    End Function
 
     Private Sub mergefiles(strDestinationfile As String, files As List(Of String))
         Dim myBuffer(4096) As Byte
@@ -228,15 +260,17 @@ Public Class BLImport
             Dim ind As Gedcom.GedcomIndividualRecord = gcd.Individuals(i)
             If IsNothing(ind.UserReferenceNumber) OrElse Not ind.UserReferenceNumber.ToUpper.StartsWith("X") Then
                 Dim ind1 = insertIndividual(ctx, ind)
-                If Not IsNothing(writer) Then writer.WriteLine(ind1.getInsertSql)
-                individualsProcesed = individualsProcesed + 1
-                If (i Mod 100) = 0 Then
-                    If Not IsNothing(ctx) Then ctx.SaveChanges()
-                    'Progress = 50 + CInt(individualsProcesed / individualsTotal * 100)
-                    Progress = CInt((individualsProcesed + familiesProcesed) / (individualsTotal + familiesTotal) * 100)
-                    RaiseEvent ImportPercentageDone(Me, New ImportPercentageDoneEventArgs(Progress))
-                    If Not IsNothing(ctx) Then ctx.Dispose()
-                    If Not IsNothing(ctx) Then ctx = getCtx(connectionstring)
+                If Not IsNothing(ind1) Then
+                    If Not IsNothing(writer) Then writer.WriteLine(ind1.getInsertSql)
+                    individualsProcesed = individualsProcesed + 1
+                    If (i Mod 100) = 0 Then
+                        If Not IsNothing(ctx) Then ctx.SaveChanges()
+                        'Progress = 50 + CInt(individualsProcesed / individualsTotal * 100)
+                        Progress = CInt((individualsProcesed + familiesProcesed) / (individualsTotal + familiesTotal) * 100)
+                        RaiseEvent ImportPercentageDone(Me, New ImportPercentageDoneEventArgs(Progress))
+                        If Not IsNothing(ctx) Then ctx.Dispose()
+                        If Not IsNothing(ctx) Then ctx = getCtx(connectionstring)
+                    End If
                 End If
             End If
         Next
@@ -259,14 +293,16 @@ Public Class BLImport
         For i = start_index To end_index
             Dim fam As Gedcom.GedcomFamilyRecord = gcd.Families(i)
             Dim fam1 = insertFamily(ctx, fam)
-            If Not IsNothing(writer) Then writer.WriteLine(fam1.getInsertSql)
-            familiesProcesed = familiesProcesed + 1
-            If (i Mod 100) = 0 Then
-                If Not IsNothing(ctx) Then ctx.SaveChanges()
-                Progress = CInt((individualsProcesed + familiesProcesed) / (individualsTotal + familiesTotal) * 100)
-                RaiseEvent ImportPercentageDone(Me, New ImportPercentageDoneEventArgs(Progress))
-                If Not IsNothing(ctx) Then ctx.Dispose()
-                If Not IsNothing(ctx) Then ctx = getCtx(connectionstring)
+            If Not IsNothing(fam1) Then
+                If Not IsNothing(writer) Then writer.WriteLine(fam1.getInsertSql)
+                familiesProcesed = familiesProcesed + 1
+                If (i Mod 100) = 0 Then
+                    If Not IsNothing(ctx) Then ctx.SaveChanges()
+                    Progress = CInt((individualsProcesed + familiesProcesed) / (individualsTotal + familiesTotal) * 100)
+                    RaiseEvent ImportPercentageDone(Me, New ImportPercentageDoneEventArgs(Progress))
+                    If Not IsNothing(ctx) Then ctx.Dispose()
+                    If Not IsNothing(ctx) Then ctx = getCtx(connectionstring)
+                End If
             End If
         Next
 

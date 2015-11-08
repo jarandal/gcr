@@ -1,4 +1,6 @@
-﻿Imports System.Data.Objects
+﻿Imports System.Threading
+Imports System.Threading.Tasks
+Imports System.Data.Objects
 Imports System.Data.EntityClient
 Imports System.Data.SqlClient
 Imports System.Text
@@ -211,6 +213,115 @@ Public Class GcrContext
         End Try
 
     End Function
+
+    Public Shared Sub RestoreServerDatabaseParalel(filenames As List(Of String), processingFile As String)
+
+        Dim databaseName As String = "gcr_db"
+        Dim connection As SqlConnection = Nothing
+        Dim command As SqlCommand = Nothing
+
+        log.Info("---=== INICIO del proceso de archivo de datos ===---")
+
+        Try
+            If System.IO.File.Exists(filenames(0)) = True Then
+
+                Dim progress As Integer = 0
+
+                connection = New SqlConnection(getServerConnectionString)
+                connection.Open()
+                databaseName = connection.Database
+
+                command = connection.CreateCommand()
+
+                command.CommandText = "USE [" + databaseName + "]"
+                command.ExecuteNonQuery()
+
+                command.CommandText = getTempDatabaseScript()
+                command.ExecuteNonQuery()
+
+                Parallel.For(0, filenames.Count,
+                     Sub(index)
+                         Dim connection2 As SqlConnection = Nothing
+                         Dim objReader As System.IO.StreamReader = Nothing
+                         Dim line As Long = 0
+                         Try
+                             connection2 = New SqlConnection(getServerConnectionString)
+                             connection2.Open()
+                             Dim command2 = connection.CreateCommand()
+
+                             objReader = New System.IO.StreamReader(filenames(index))
+                             Dim commandText As String = ""
+                             Do While objReader.Peek() <> -1
+                                 Try
+                                     Dim aux As String = objReader.ReadLine()
+                                     line = line + 1
+                                     If aux.Trim = "GO" Then
+                                         command2.CommandText = commandText
+                                         command2.ExecuteNonQuery()
+                                         commandText = ""
+                                     Else
+                                         commandText = commandText & vbCrLf & aux
+                                     End If
+
+                                     If processingFile.Length > 0 Then
+                                         Dim new_progress As Integer = CInt(objReader.BaseStream.Position / objReader.BaseStream.Length * 100)
+                                         If progress < new_progress And progress < 100 Then
+                                             '\\ nunca graba el 100
+                                             progress = new_progress
+                                             log.InfoFormat("Procesando archivo de datos {0}%", progress)
+                                             System.IO.File.WriteAllText(processingFile, progress)
+                                         End If
+                                     End If
+
+                                 Catch ex As Exception
+                                     log.ErrorFormat("Error al ejecutar la instruccion línea {0} '{1}'", line, commandText)
+                                     log.ErrorFormat("Mensaje de error '{0}'", ex.Message)
+                                     log.ErrorFormat("Detalle del error '{0}'", ex.ToString)
+                                     commandText = ""
+                                 End Try
+                             Loop
+
+                         Finally
+                             If Not IsNothing(objReader) Then objReader.Close()
+                             If Not IsNothing(connection2) Then connection2.Close()
+                         End Try
+
+                     End Sub)
+
+                command.CommandText = getRenameDatabaseScript()
+                command.ExecuteNonQuery()
+
+                Try
+                    command.CommandText = getIndexScript()
+                    command.ExecuteNonQuery()
+                Catch ex As Exception
+                    log.ErrorFormat("No se pudieron habilitar los indices")
+                End Try
+
+                command.CommandText = "Update [" & databaseName & "].[dbo].[Media] set filename = SUBSTRING([title],31,200) where title like 'C:\Users\admin\D%'"
+                command.ExecuteNonQuery()
+
+                command.CommandText = "if exists(select * from sys.databases where name = '" & databaseName & "') DBCC SHRINKDATABASE ('" & databaseName & "' , 0)"
+                command.ExecuteNonQuery()
+
+            End If
+
+        Catch ex As Exception
+            log.ErrorFormat("Error al importar archivo de datos")
+            log.ErrorFormat("Mensaje de error '{0}'", ex.Message)
+            log.ErrorFormat("Detalle del error '{0}'", ex.ToString)
+        Finally
+            If Not IsNothing(command) Then command.Dispose()
+            If Not IsNothing(connection) Then connection.Close()
+            For Each s In filenames
+                If System.IO.File.Exists(s) Then System.IO.File.Delete(s)
+            Next
+            log.Info("---=== FIN del proceso de archivo de datos ===---")
+        End Try
+
+    End Sub
+
+
     Public Shared Sub RestoreServerDatabase(filename As String, processingFile As String)
 
         Dim databaseName As String = "gcr_db"
@@ -226,6 +337,7 @@ Public Class GcrContext
 
                 connection = New SqlConnection(getServerConnectionString)
                 connection.Open()
+                databaseName = connection.Database
 
                 command = connection.CreateCommand()
 
@@ -280,7 +392,10 @@ Public Class GcrContext
                 command.CommandText = getIndexScript()
                 command.ExecuteNonQuery()
 
-                command.CommandText = "if exists(select * from sys.databases where name = '" & databaseName & "') DBCC SHRINKDATABASE ('" & databaseName & "' , 0);"
+                command.CommandText = "Update [" & databaseName & "].[dbo].[Media] set filename = SUBSTRING([title],31,200) where title like 'C:\Users\admin\D%'"
+                command.ExecuteNonQuery()
+
+                command.CommandText = "if exists(select * from sys.databases where name = '" & databaseName & "') DBCC SHRINKDATABASE ('" & databaseName & "' , 0)"
                 command.ExecuteNonQuery()
 
             End If

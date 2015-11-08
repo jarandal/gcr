@@ -46,12 +46,12 @@ Public Class Process
                     If File.Exists(zipfilename) Then
                         System.IO.File.WriteAllText(processingFile, "0")
                         Try
-                            Zip.ExtractZipFile(zipfilename, gcrPath)
+                            Dim files = Zip.ExtractZipFile(zipfilename, gcrPath)
+                            Dim sqlfiles = files.Where(Function(x) x.Contains(".sql_")).ToList()
 
                             If processSQL Then
-                                Dim sqlfile As String = FindSql(filename, gcrPath)
                                 Dim b As New Gedcom.BL.BLImport
-                                Gedcom.Model.GcrContext.RestoreServerDatabase(sqlfile, processingFile)
+                                Gedcom.Model.GcrContext.RestoreServerDatabaseParalel(sqlfiles, processingFile)
                             End If
 
                             Dim sitemapindexfile As String = Gedcom.BL.BLIndividuals.GenerateSiteMapIndex(uploadPath, My.Settings.WebSite)
