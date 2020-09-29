@@ -233,6 +233,7 @@ Public Overridable Property Distinguished As Nullable(Of Boolean)
 	End Property
 
     #End Region
+
     #Region "Navigation Properties"
 	<System.Runtime.Serialization.DataMemberAttribute()> _
 	Public Overridable Property Events As ObservableCollection(Of [Event])
@@ -300,6 +301,7 @@ Public Overridable Property Distinguished As Nullable(Of Boolean)
     Private _media As ObservableCollection(Of Media)
 
     #End Region
+
     #Region "Association Fixup"
     Private _settingFK As Boolean = False
 
@@ -348,6 +350,7 @@ Public Overridable Property Distinguished As Nullable(Of Boolean)
     End Sub
 
     #End Region
+
 
     Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
 

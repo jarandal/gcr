@@ -181,6 +181,7 @@ Public Overridable Property Attachments As String
 
     #End Region
 
+
     Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
 
     Protected Sub RaisePropertyChanged(ByVal propertyName As String)

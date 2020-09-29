@@ -156,6 +156,16 @@ Public Class IndividualPage
                         pnlNoFamilies.Visible = False
                         ddlFamilies.DataSource = families
 
+                        'Dim auxL As List(Of Family) = families.Where(Function(c) c.Date.HasValue).OrderBy(Function(c) c.Date)
+                        'auxL.AddRange(families.Where(Function(c) Not c.Date.HasValue))
+
+                        Dim auxL As List(Of Family) = families
+                        Dim i As Integer
+                        For i = 1 To auxL.Count
+                            auxL(i - 1).HusbandName = CStr(i) + "° " + auxL(i - 1).HusbandName
+                            auxL(i - 1).WifeName = CStr(i) + "° " + auxL(i - 1).WifeName
+                        Next
+
                         If families(0).Husband_Id = XRefID Then
                             '\\ Es el esposo
                             ddlFamilies.DataTextField = "WifeName"

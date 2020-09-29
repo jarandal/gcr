@@ -31,4 +31,4 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]
 
-[assembly: InternalsVisibleTo("GedcomParser, PublicKey=27d9fad2483f538e")]
+//[assembly: InternalsVisibleTo("GedcomParser, PublicKey=27d9fad2483f538e")]

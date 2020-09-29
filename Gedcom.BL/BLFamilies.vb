@@ -15,7 +15,7 @@ Public Class BLFamilies
     End Function
 
     Friend Shared Function GetByIndividualId(ctx As GcrContext, Id As String, Optional so As SearchOptions = Nothing) As List(Of Family)
-        Dim q As ObjectQuery(Of Family) = (From fam In ctx.Families Where fam.Husband_Id = Id Or fam.Wife_Id = Id)
+        Dim q As ObjectQuery(Of Family) = (From fam In ctx.Families Where fam.Husband_Id = Id Or fam.Wife_Id = Id Order By fam.Original_Id Ascending)
         q = GcrContext.ApplySearchOptions(q, so)
         Return q.ToList
     End Function

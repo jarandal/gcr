@@ -108,8 +108,23 @@ Public Overridable Property [Date] As Nullable(Of Date)
             End If
 		End Set
 	End Property
+	Private _original_Id As String
+
+	<System.Runtime.Serialization.DataMemberAttribute()> _
+Public Overridable Property Original_Id As String
+        Get
+            Return _original_Id
+        End Get
+        Set(ByVal value As String)
+			If (Object.ReferenceEquals(Me._original_Id, value) <> True) Then
+				_original_Id = value
+				Me.RaisePropertyChanged("Original_Id")
+            End If
+		End Set
+	End Property
 
     #End Region
+
     #Region "Navigation Properties"
 	<System.Runtime.Serialization.DataMemberAttribute()> _
 	Public Overridable Property Childrens As ObservableCollection(Of Individual)
@@ -138,6 +153,7 @@ Public Overridable Property [Date] As Nullable(Of Date)
     Private _childrens As ObservableCollection(Of Individual)
 
     #End Region
+
     #Region "Association Fixup"
     Private Sub FixupChildrens(ByVal sender As Object, ByVal e As NotifyCollectionChangedEventArgs)
         If e.NewItems IsNot Nothing Then
@@ -155,6 +171,7 @@ Public Overridable Property [Date] As Nullable(Of Date)
     End Sub
 
     #End Region
+
 
     Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
 

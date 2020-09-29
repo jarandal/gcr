@@ -4,56 +4,37 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
-        <EntityContainer Name="ModelStoreContainer">
-          <EntitySet Name="Events" EntityType="Model.Store.Events" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Families" EntityType="Model.Store.Families" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="IndividualOptions" EntityType="Model.Store.IndividualOptions" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Individuals" EntityType="Model.Store.Individuals" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Media" EntityType="Model.Store.Media" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Request" EntityType="Model.Store.Request" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK_Childrens" Association="Model.Store.FK_Childrens">
-            <End Role="Families" EntitySet="Families" />
-            <End Role="Individuals" EntitySet="Individuals" />
-          </AssociationSet>
-          <AssociationSet Name="FK_IndividualEvent" Association="Model.Store.FK_IndividualEvent">
-            <End Role="Individuals" EntitySet="Individuals" />
-            <End Role="Events" EntitySet="Events" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Media_Individuals" Association="Model.Store.FK_Media_Individuals">
-            <End Role="Individuals" EntitySet="Individuals" />
-            <End Role="Media" EntitySet="Media" />
-          </AssociationSet>
-        </EntityContainer>
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityType Name="Events">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Date" Type="datetime2" />
+          <Property Name="Date" Type="datetime2" Precision="7" />
           <Property Name="Notes" Type="nvarchar(max)" />
-          <Property Name="Individual_Id" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Individual_Id" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Place" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Families">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Id" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
           <Property Name="NotesSummary" Type="nvarchar(max)" />
           <Property Name="Husband_Id" Type="nvarchar" MaxLength="200" />
           <Property Name="Wife_Id" Type="nvarchar" MaxLength="200" />
-          <Property Name="Date" Type="datetime2" />
+          <Property Name="Date" Type="datetime2" Precision="7" />
+          <Property Name="Original_Id" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="IndividualOptions">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Original_Id" Type="nvarchar" Nullable="false" MaxLength="200" />
-          <Property Name="Date" Type="datetime2" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Original_Id" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Date" Type="datetime2" Precision="7" />
           <Property Name="Type" Type="nvarchar" MaxLength="50" />
           <Property Name="Description" Type="nvarchar" MaxLength="200" />
         </EntityType>
@@ -61,17 +42,17 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="200" />
-          <Property Name="Original_Id" Type="nvarchar" Nullable="false" MaxLength="200" />
-          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="200" />
-          <Property Name="SurName" Type="nvarchar" Nullable="false" MaxLength="200" />
-          <Property Name="Sex" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="Id" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Original_Id" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="SurName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Sex" Type="nvarchar" MaxLength="1" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
           <Property Name="NotesSummary" Type="nvarchar(max)" />
           <Property Name="Family_Id" Type="nvarchar" MaxLength="200" />
-          <Property Name="BirthDate" Type="datetime2" />
+          <Property Name="BirthDate" Type="datetime2" Precision="7" />
           <Property Name="BirthPlace" Type="nvarchar" MaxLength="200" />
-          <Property Name="DeathDate" Type="datetime2" />
+          <Property Name="DeathDate" Type="datetime2" Precision="7" />
           <Property Name="DeathPlace" Type="nvarchar" MaxLength="200" />
           <Property Name="Dead" Type="bit" />
           <Property Name="Distinguished" Type="bit" />
@@ -80,7 +61,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Filename" Type="nvarchar" MaxLength="500" />
           <Property Name="Title" Type="nvarchar(max)" />
           <Property Name="Notes" Type="nvarchar(max)" />
@@ -91,21 +72,21 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="200" />
           <Property Name="Phone" Type="nvarchar" MaxLength="200" />
-          <Property Name="Text" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Text" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Original_Id" Type="nvarchar" MaxLength="200" />
           <Property Name="Date" Type="datetime" Nullable="false" />
           <Property Name="IP" Type="nvarchar" MaxLength="50" />
-          <Property Name="Reason" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Reason" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="AttachmentsQty" Type="int" Nullable="false" />
           <Property Name="Attachments" Type="nvarchar" MaxLength="2000" />
         </EntityType>
         <Association Name="FK_Childrens">
-          <End Role="Families" Type="Model.Store.Families" Multiplicity="0..1" />
-          <End Role="Individuals" Type="Model.Store.Individuals" Multiplicity="*" />
+          <End Role="Families" Type="Self.Families" Multiplicity="0..1" />
+          <End Role="Individuals" Type="Self.Individuals" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Families">
               <PropertyRef Name="Id" />
@@ -116,8 +97,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_IndividualEvent">
-          <End Role="Individuals" Type="Model.Store.Individuals" Multiplicity="1" />
-          <End Role="Events" Type="Model.Store.Events" Multiplicity="*" />
+          <End Role="Individuals" Type="Self.Individuals" Multiplicity="1" />
+          <End Role="Events" Type="Self.Events" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Individuals">
               <PropertyRef Name="Id" />
@@ -128,8 +109,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Media_Individuals">
-          <End Role="Individuals" Type="Model.Store.Individuals" Multiplicity="0..1" />
-          <End Role="Media" Type="Model.Store.Media" Multiplicity="*" />
+          <End Role="Individuals" Type="Self.Individuals" Multiplicity="0..1" />
+          <End Role="Media" Type="Self.Media" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Individuals">
               <PropertyRef Name="Id" />
@@ -139,6 +120,26 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Families" EntityType="Self.Families" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IndividualOptions" EntityType="Self.IndividualOptions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Individuals" EntityType="Self.Individuals" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Media" EntityType="Self.Media" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Request" EntityType="Self.Request" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Childrens" Association="Self.FK_Childrens">
+            <End Role="Families" EntitySet="Families" />
+            <End Role="Individuals" EntitySet="Individuals" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IndividualEvent" Association="Self.FK_IndividualEvent">
+            <End Role="Individuals" EntitySet="Individuals" />
+            <End Role="Events" EntitySet="Events" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Media_Individuals" Association="Self.FK_Media_Individuals">
+            <End Role="Individuals" EntitySet="Individuals" />
+            <End Role="Media" EntitySet="Media" />
+          </AssociationSet>
+        </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -169,7 +170,7 @@
           </Key>
           <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Type" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="Date" />
+          <Property Type="DateTime" Name="Date" Precision="7" />
           <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Individual_Id" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Place" MaxLength="200" FixedLength="false" Unicode="true" />
@@ -184,8 +185,9 @@
           <Property Type="String" Name="NotesSummary" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Husband_Id" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Wife_Id" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="Date" />
+          <Property Type="DateTime" Name="Date" Precision="7" />
           <NavigationProperty Name="Childrens" Relationship="Model.FK_Childrens" FromRole="Families" ToRole="Individuals" />
+          <Property Name="Original_Id" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           </EntityType>
         <EntityType Name="Individual">
           <Key>
@@ -198,15 +200,15 @@
           <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Type="String" Name="NotesSummary" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Family_Id" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="BirthDate" />
+          <Property Type="DateTime" Name="BirthDate" Precision="7" />
           <Property Type="String" Name="BirthPlace" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="DeathDate" />
+          <Property Type="DateTime" Name="DeathDate" Precision="7" />
           <Property Type="String" Name="DeathPlace" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Type="Boolean" Name="Dead" />
           <NavigationProperty Name="Events" Relationship="Model.FK_IndividualEvent" FromRole="Individuals" ToRole="Events" />
           <NavigationProperty Name="Family" Relationship="Model.FK_Childrens" FromRole="Individuals" ToRole="Families" />
           <NavigationProperty Name="Media" Relationship="Model.FK_Media_Individuals" FromRole="Individual" ToRole="Media" />
-          <Property Type="String" Name="Original_Id" Nullable="false" />
+          <Property Type="String" Name="Original_Id" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
           <Property Type="Boolean" Name="Distinguished" />
         </EntityType>
         <Association Name="FK_IndividualEvent">
@@ -239,8 +241,8 @@
           </Key>
           <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Filename" MaxLength="500" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="Title" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="Notes" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="Int32" Name="SortOrder" />
           <Property Type="String" Name="Individual_Id" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Individual" Relationship="Model.FK_Media_Individuals" FromRole="Media" ToRole="Individual" />
@@ -267,7 +269,7 @@
           <Property Type="String" Name="Phone" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Text" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Original_Id" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="DateTime" Name="Date" Nullable="false" Precision="3" />
           <Property Type="String" Name="IP" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Reason" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Type="Int32" Name="AttachmentsQty" Nullable="false" />
@@ -279,7 +281,7 @@
           </Key>
           <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Original_Id" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="Date" />
+          <Property Type="DateTime" Name="Date" Precision="7" />
           <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
         </EntityType>
@@ -304,6 +306,7 @@
           <EntitySetMapping Name="Families">
             <EntityTypeMapping TypeName="Model.Family">
               <MappingFragment StoreEntitySet="Families">
+                <ScalarProperty Name="Original_Id" ColumnName="Original_Id" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="Wife_Id" ColumnName="Wife_Id" />
                 <ScalarProperty Name="Husband_Id" ColumnName="Husband_Id" />
@@ -390,6 +393,7 @@
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
         <DesignerProperty Name="DDLGenerationTemplate" Value="$(VSEFTools)\DBGen\SSDLToMySQL.tt" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
       </DesignerInfoPropertySet>
     </edmx:Options>
     <!-- Diagram content (shape and connector positions) -->

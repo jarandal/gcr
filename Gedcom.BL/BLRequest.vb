@@ -82,6 +82,7 @@ Public Class BLRequest
 
         Try
             client.Timeout = 600000 '600 segundos
+            log.ErrorFormat("Email sent from {0}", request.Email)
             client.Send(message)
         Catch ex As Exception
             log.ErrorFormat("Error in SendMail: {0} - {1}", ex.Message, ex.ToString())

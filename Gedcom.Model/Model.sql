@@ -31,6 +31,7 @@ SET QUOTED_IDENTIFIER ON;
 SET ANSI_PADDING ON;
 CREATE TABLE [dbo].[Families](
 	[Id] [nvarchar](200) NOT NULL,
+	[Original_Id] [nvarchar](200) NOT NULL,
 	[Notes] [varchar](max) COLLATE Modern_Spanish_CI_AI NULL,
 	[NotesSummary] [nvarchar](max) COLLATE Modern_Spanish_CI_AI NULL,
 	[Husband_Id] [nvarchar](200) NULL,

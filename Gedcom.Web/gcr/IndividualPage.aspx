@@ -149,7 +149,7 @@
                 <tr>
                     <td colspan="3">
                     <asp:Panel ID="pnlFamilies" runat="server" Visible="false">
-                        <h2 style="text-align:left;">Conyüge:<asp:DropDownList ID="ddlFamilies" runat="server" AutoPostBack="True"></asp:DropDownList></h2>
+                        <h2 style="text-align:left;">Cónyuges:<asp:DropDownList ID="ddlFamilies" runat="server" AutoPostBack="True"></asp:DropDownList></h2>
                         <uc1:IndividualUC ID="SpouseUC" runat="server" />
                         <a class='openpage' title='Ver notas familiares' runat="Server" id="lnkFamilyNotes"><img src="../img/icon-notes.png" alt="Notas"/>&nbsp;Ver notas familiares</a>
                     </asp:Panel>

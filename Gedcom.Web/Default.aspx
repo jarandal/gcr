@@ -14,14 +14,19 @@
     <p>
         &nbsp;</p>
     <h3  >
-        INVESTIGADOR Y RECOPILADOR: JUAN DALMATI CARRASCO
+        INVESTIGADOR Y RECOPILADOR: <strong>JUAN DALMATI CARRASCO </strong>
     </h3>
     <h3 >
-        COLABORADOR: JOSÉ URZÚA PRIETO, GENEALOGISTA</h3>
-    <p >
-        &nbsp;</p>
+        COLABORADOR: <strong>JOSÉ URZÚA PRIETO, GENEALOGISTA</strong>
+
+    </h3 >
+    <h3 >
+        COLABORADOR EN TECNO-GENEALOGÍA: <strong>DANIEL DALMATI PLANAS</strong>
+    </h3>
+    <h3>
+        FECHA ÚLTIMA ACTUALIZACIÓN: 19-04-2019</h3>
     <h4>
-        Este ensayo genealógico, producto de largos años de trabajo, a diferencia de 
+        Este ensayo genealógico, producto de largos años de trabajo, a diferencia d-e 
         otras interesantes publicaciones, que abordan uno o varios linajes en forma 
         lineal, busca desarrollar el concepto de la gran familia chilena, tomada como un 
         todo.<br />
@@ -80,7 +85,7 @@ COLABORAR CON FOTOS FECHAS Y DATOS, REPORTA ERRORES, ETC.</h4>
 SI NO ERES PARTE DE LA RED Y DESEAS INGRESAR GRATUITAMENTE, INDÍCANOS PARIENTE (S) EXISTENTE (S), HACER REFERENCIA A SUS NOMBRES Y LA SECUENCIA GENEALÓGICA HASTA TUS PROPIOS DATOS. (SI LOS INCLUÍMOS PASARÁS A SER PARTE DE LA  RED)<br />
         </h4>
     <h4>        
-        SELECCIONA LA OPCIÖN &quot;CONTACTO&quot; EN LA PARTE SUPERIOR DE ESTA PÁGINA PARA ACOJER 
+        SELECCIONA LA OPCIÓN &quot;CONTACTO&quot; EN LA PARTE SUPERIOR DE ESTA PÁGINA PARA ACOGER 
         LAS OPCIONES OFRECIDAS &nbsp;EN LOS ACÁPITES ANTERIORES<br />
         </h4>
      <h7>

@@ -39,6 +39,7 @@
     <OutputPath>bin\</OutputPath>
     <DocumentationFile>Gedcom.Web.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -161,7 +162,6 @@
     <Content Include="App_Browsers\ie.browser" />
     <None Include="My Project\PublishProfiles\genealogiachilenaenred.cl - Web Deploy.pubxml" />
     <None Include="My Project\PublishProfiles\test.genealogiachilenaenred.cl - Web Deploy.pubxml" />
-    <None Include="My Project\PublishProfiles\w2008r2.pubxml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>

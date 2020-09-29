@@ -34,6 +34,7 @@ Partial Public Class ModelContainer
     End Sub
 
 #End Region
+
 #Region "ObjectSet Properties"
 
     Public ReadOnly Property Events() As ObjectSet(Of [Event])
@@ -97,6 +98,7 @@ Partial Public Class ModelContainer
     Private _individualOptions As ObjectSet(Of IndividualOptions)
 
 #End Region
+
 
     Private _postfix As String = ""
     Public Property PostFix() As String

@@ -411,10 +411,12 @@ Public Class BLImport
 
         Dim fam As Family = Nothing
 
+        'If auxFamilyIndex.ContainsKey(family.OriginalRefID) Then
         If auxFamilyIndex.ContainsKey(family.XRefID) Then
             Return Nothing
         Else
             fam = New Family
+            fam.Original_Id = family.OriginalRefID
             fam.Id = family.XRefID
             fam.Husband_Id = family.Husband
             fam.Wife_Id = family.Wife

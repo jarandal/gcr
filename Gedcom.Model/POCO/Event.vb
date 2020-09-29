@@ -116,6 +116,7 @@ Public Overridable Property Place As String
 	End Property
 
     #End Region
+
     #Region "Navigation Properties"
 	<System.Runtime.Serialization.DataMemberAttribute()> _
     Public Overridable Property Individual As Individual
@@ -133,6 +134,7 @@ Public Overridable Property Place As String
     Private _individual As Individual
 
     #End Region
+
     #Region "Association Fixup"
 
     Private Sub FixupIndividual(ByVal previousValue As Individual)
@@ -150,6 +152,7 @@ Public Overridable Property Place As String
     End Sub
 
     #End Region
+
 
     Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
 

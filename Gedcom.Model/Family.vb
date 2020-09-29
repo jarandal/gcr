@@ -26,20 +26,22 @@
         Dim d1 As String = "NULL"
         If (Me.Date.HasValue) Then d1 = "'" & Me.Date.Value.ToString("s") & "'"
 
-        Return "INSERT [dbo].[Families_temp] (" & _
-            "[Id], " & _
-            "[Notes], " & _
-            "[NotesSummary], " & _
-            "[Husband_Id], " & _
-            "[Wife_Id], " & _
-            "[Date]" & _
-            ") VALUES (" & _
-            "N'" & Me.Id & "', " & _
-            "N'" & Util.escape(Me.Notes) & "', " & _
-            "N'" & Util.escape(Me.NotesSummary) & "', " & _
-            "N'" & Me.Husband_Id & "', " & _
-            "N'" & Me.Wife_Id & "', " & _
-            d1 & _
+        Return "INSERT [dbo].[Families_temp] (" &
+            "[Id], " &
+            "[Original_Id], " &
+            "[Notes], " &
+            "[NotesSummary], " &
+            "[Husband_Id], " &
+            "[Wife_Id], " &
+            "[Date]" &
+            ") VALUES (" &
+            "N'" & Me.Id & "', " &
+            "N'" & Me.Original_Id & "', " &
+            "N'" & Util.escape(Me.Notes) & "', " &
+            "N'" & Util.escape(Me.NotesSummary) & "', " &
+            "N'" & Me.Husband_Id & "', " &
+            "N'" & Me.Wife_Id & "', " &
+            d1 &
             ")" & vbCrLf & "GO" & vbCrLf
     End Function
 
