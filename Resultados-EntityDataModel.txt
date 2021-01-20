@@ -1,0 +1,7 @@
+﻿Archivo de modelo generado: Model.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.4709784.
+La generación del modelo tardó 00:00:01.6265948.
+Error al ejecutar la herramienta personalizada en el archivo C:\Prog\Gedcom.net\Gedcom.Model\POCO\Model.Context.tt. El mensaje de error es No se pueden quitar los resultados generados 'Model.Context.vb' para el archivo 'POCO\Model.Context.tt'.  .
+Archivo de modelo generado: Model.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.5130635.
+La generación del modelo tardó 00:00:00.3981780.

@@ -115,6 +115,7 @@ Public Class GcrContext
             connection.Open()
 
             command = connection.CreateCommand()
+            command.CommandTimeout = 7200
 
             command.CommandText = "if exists(select * from sys.databases where name = '" & databaseName & "') ALTER DATABASE " & databaseName & " SET OFFLINE WITH ROLLBACK IMMEDIATE"
             command.ExecuteNonQuery()
@@ -190,6 +191,7 @@ Public Class GcrContext
             connection.Open()
 
             command = connection.CreateCommand()
+            command.CommandTimeout = 7200
 
             command.CommandText = "USE [" + databaseName + "]"
             command.ExecuteNonQuery()
@@ -232,6 +234,7 @@ Public Class GcrContext
                 databaseName = connection.Database
 
                 command = connection.CreateCommand()
+                command.CommandTimeout = 7200
 
                 command.CommandText = "USE [" + databaseName + "]"
                 command.ExecuteNonQuery()
@@ -248,6 +251,7 @@ Public Class GcrContext
                              connection2 = New SqlConnection(getServerConnectionString)
                              connection2.Open()
                              Dim command2 = connection.CreateCommand()
+                             command.CommandTimeout = 7200
 
                              objReader = New System.IO.StreamReader(filenames(index))
                              Dim commandText As String = ""
@@ -340,6 +344,7 @@ Public Class GcrContext
                 databaseName = connection.Database
 
                 command = connection.CreateCommand()
+                command.CommandTimeout = 7200
 
                 command.CommandText = "USE [" + databaseName + "]"
                 command.ExecuteNonQuery()
@@ -427,6 +432,7 @@ Public Class GcrContext
             connection.Open()
 
             command = connection.CreateCommand()
+            command.CommandTimeout = 7200
 
             command.CommandText = "USE [" + databaseName + "]"
             command.ExecuteNonQuery()
